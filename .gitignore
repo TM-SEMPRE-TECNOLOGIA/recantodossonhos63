@@ -3,3 +3,12 @@ node_modules/
 tour_frames/
 *.pyc
 __pycache__/
+
+# Arquivos internos de desenvolvimento (nao fazem parte do site publico)
+*.py
+*.pyc
+__pycache__/
+mcp-server/
+record_tour.js
+recanto_dos_sonhos_demo.mp4
+.vercel/
