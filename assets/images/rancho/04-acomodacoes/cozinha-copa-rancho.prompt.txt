@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: cozinha-copa-rancho.jpg
+=================================================================
+
+DIRETIVA: Inpainting / Remoção de Plástico / Valorização Rústica
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+A mesa grande de madeira rústica maciça no centro, a pia com azulejos, a geladeira e o freezer na cozinha do rancho.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+REMOVER OBRIGATORIAMENTE o plástico protetor transparente enrolado na mesa, revelando o acabamento nobre da madeira envernizada. Adicionar sobre a mesa uma fruteira rústica ou garrafa de café. REMOVER a data ("27 de abril de 2025 16:23").
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Spacious rustic kitchen and dining area in a countryside river lodge, beautiful solid wood trestle table in center with visible natural wood grain (remove plastic wrap covering), clean tiled floor, refrigerator, stove, window looking onto green trees, warm welcoming country kitchen atmosphere, remove date stamp, authentic interior photography, real wood textures, no 3D render.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Cozinha rústica do rancho com ampla mesa de madeira maciça envernizada (remover o plástico da mesa e mostrar a textura real da madeira). Remover o carimbo de data. Luz natural agradável pela janela, ar aconchegante de rancho acolhedor.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

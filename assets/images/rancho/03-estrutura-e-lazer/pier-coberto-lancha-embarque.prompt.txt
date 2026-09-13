@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: pier-coberto-lancha-embarque.jpg
+=================================================================
+
+DIRETIVA: Aumento de Contraste / Enquadramento / Foco
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+A descida do rancho entre as árvores nativas até o píer flutuante coberto e a lancha rápida esportiva ancorada no Rio Araguaia.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+Aumentar a nitidez da lancha e das águas do rio através da folhagem. Equilibrar o contraluz forte.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Documentary travel photo looking down a tree-shaded earthen path toward a covered floating boat dock on the Araguaia river, motorboat moored under metal canopy, glittering sunlit river water in background, realistic forest shade, sharp focus on dock and boat, authentic nature photography, no 3D filter.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Foto autêntica do caminho sombreado descendo para o píer privativo coberto no Rio Araguaia, lancha ancorada pronta para navegação. Melhoria de nitidez e contraste, preservando as folhas secas no chão e a textura natural da mata.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

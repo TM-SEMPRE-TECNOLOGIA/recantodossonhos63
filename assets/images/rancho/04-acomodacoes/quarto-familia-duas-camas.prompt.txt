@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: quarto-familia-duas-camas.jpg
+=================================================================
+
+DIRETIVA: Interior Design Uplift / Preservação da Estrutura de Madeira/OSB
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+Manter o layout idêntico: as duas camas box casal lado a lado, as paredes revestidas em painel de OSB/madeira texturizada, o ar-condicionado na parede direita e os quadros náuticos ao fundo.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+REMOVER a data ("17 de maio de 2026 09:55"). Trocar as roupas de cama simples por lençóis e cobre-leitos coordenados em tons neutros (linho/algodão cru ou verde sálvia suave) com travesseiros arrumados. Adicionar uma iluminação quente e suave (2700K) que destaque a textura rústica da madeira OSB.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Warm and inviting rustic lodge family bedroom, two comfortable double beds positioned side by side dressed in high quality natural textured linen quilts and fluffy pillows, walls lined with authentic textured OSB wood panels, trio of nautical wall art, split air conditioner on the right, warm ambient 2700k room lighting, cozy atmosphere, real architectural photography, authentic wood grain and textile micro-textures, zero CGI smoothing, remove date watermark.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Quarto família com duas camas de casal no rancho. Paredes em painel de madeira OSB autêntico com quadros náuticos, ar-condicionado na parede. Camas vestidas com edredons e lençóis aconchegantes em tecido natural com textura real. Iluminação quente e convidativa, preservando 100% da disposição original sem aspecto artificial de maquete 3D. Remover carimbo de data.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

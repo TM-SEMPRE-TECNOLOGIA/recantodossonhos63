@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: pesca-peixes-frescos-tabua.jpg
+=================================================================
+
+DIRETIVA: Fotografia Culinária / Gastronomia Rústica
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+Os peixes de rio frescos já limpos e escamados dispostos na tábua de corte de madeira.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+Realçar a textura fresca das escamas, os cortes culinários e o aspecto apetitoso do peixe de água doce pronto para o preparo. Iluminação focada na tábua.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Rustic culinary still life photography of freshly caught river fish, cleaned and seasoned on a wooden cutting board ready for frying, sharp textures of fish scales and fresh cuts, natural kitchen light, authentic Brazilian river cooking tradition, close up shot, 50mm f/2.8, no CGI smoothing.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Foto culinária rústica de peixes frescos de rio limpos e retalhados sobre tábua de madeira prontos para assar ou fritar. Realce de nitidez nas escamas e na textura da carne fresca, iluminação gastronômica acolhedora.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

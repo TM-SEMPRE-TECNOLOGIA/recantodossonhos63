@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: tenda-mesas-sombra.jpg
+=================================================================
+
+DIRETIVA: Ajuste de Luz / Contraste / Cores
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+O quiosque/tenda coberta com mesas e cadeiras na área de terra batida sob a copa das árvores.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+Clarear a área sob a tenda para evidenciar o espaço de descanso sombreado para grandes grupos.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Large shaded marquee tent in a rustic wooded clearing, several black outdoor dining tables and chairs arranged for group gatherings, natural sandy ground, sunlight filtering through tall green trees in background, authentic countryside retreat photograph, balanced exposure, natural tones.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Espaço sombreado de convivência sob tenda na mata com mesas e cadeiras para grupos. Clareamento das sombras internas, preservando a rusticidade do chão de terra batida e a luz natural entre as árvores.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

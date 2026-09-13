@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: mesa-pedra-guarda-sol-piscina.jpg
+=================================================================
+
+DIRETIVA: Inpainting / Remoção de Distratores / Limpeza Visual
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+A mesa redonda e os 4 bancos de concreto/pedra no gramado, e a piscina azul ao fundo.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+REMOVER a data do rodapé. REMOVER a mangueira preta estendida no gramado. REMOVER o logotipo comercial ("Skol") do guarda-sol amarelo, deixando o tecido liso ou em tom bege/amarelo neutro acolhedor.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Cozy outdoor seating area in country lodge garden, round stone table with matching curved concrete benches on fresh green grass, neutral warm canvas patio umbrella (clean, no brand logos), round blue pool in background under dappled tree shade, remove date stamp, remove black garden hose on the lawn, clean realistic photograph, crisp details, natural sunlight, no CGI.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Área de convivência no gramado com mesa e bancos de pedra, guarda-sol em lona amarela neutra (sem logos de cerveja), piscina ao fundo sob sombra das árvores. Remover a mangueira do chão e a data do rodapé. Foto limpa, profissional e 100% realista.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

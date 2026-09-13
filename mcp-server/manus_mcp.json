@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "rancho-recanto-mcp": {
+      "command": "C:/Users/mikaa/AppData/Local/Programs/Python/Python313/python.exe",
+      "args": [
+        "-u",
+        "C:/Users/mikaa/Documents/antigravity/gallant-lovelace/site-recanto-dos-sonhos/mcp-server/server.py"
+      ],
+      "env": {
+        "PYTHONUNBUFFERED": "1",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}

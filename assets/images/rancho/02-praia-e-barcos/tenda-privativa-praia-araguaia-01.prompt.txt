@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: tenda-privativa-praia-araguaia-01.jpg
+=================================================================
+
+DIRETIVA: Inpainting / Remoção de Carimbo / Color Grade Realista
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+A estrutura exata da tenda branca de lona piramidal montada na beira da água, o sombrite preto, o tambor de churrasqueira, as cadeiras laranjas e a escultura de coração no rio.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+REMOVER OBRIGATORIAMENTE a data ("23 de julho de 2026 8:52 AM") no canto inferior esquerdo. Realçar o azul cristalino do céu e a transparência rasa da água onde a sombra da tenda se projeta.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+High-end travel editorial photograph of an exclusive white marquee canopy tent set on pristine river beach sand directly at the water edge of Rio Araguaia, orange folding chairs under shade, black fabric side curtain, calm clear freshwater, distant green shore under bright blue sky, remove timestamp watermark, sharp details on sand texture and water clarity, authentic natural photography, no plastic smoothing, Leica SL2 aesthetic.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Fotografia editorial da tenda privativa branca montada na areia da praia do Rio Araguaia, cadeiras de descanso sob a sombra, água rasa e cristalina na margem. Remover a data/hora do rodapé. Tons de areia dourada e céu azul vibrante natural, textura rica de areia e lona, sem render digital falso.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: rede-dentro-dagua-araguaia.jpg
+=================================================================
+
+DIRETIVA: Remoção de Carimbo / Denoise / Aumento de Nitidez Natural
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+A cena real: a rede de descanso deitada dentro da água do rio sustentada por suportes, pessoas relaxando com água até a cintura.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+REMOVER a data ("22 de julho de 2026 1:27 PM"). A foto original tem ruído de zoom digital; aplicar redução de ruído que preserve a textura da pele e a limpidez da água sem deixar os rostos emborrachados.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Documentary style lifestyle photography of people resting comfortably in a hammock hung directly inside shallow clear river waters, refreshing tropical river scene, green forest riverbank in background, remove timestamp watermark, enhance natural clarity of water ripples, preserve authentic human skin textures, no plastic airbrushing, realistic Canon EOS photography.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Cena de lazer com rede montada dentro da água cristalina do Rio Araguaia, pessoas se refrescando. Remover o carimbo de data. Limpeza do ruído digital sem transformar pessoas em bonecos de cera, preservando ondulações naturais da água e a mata ao fundo.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

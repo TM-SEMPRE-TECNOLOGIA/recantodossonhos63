@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: barcos-voadeiras-recanto-dos-sonhos.jpg
+=================================================================
+
+DIRETIVA: Inpainting / Limpeza de Timestamp / Realce de Textura
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+CRUCIAL: Manter os 3 barcos de alumínio idênticos, especialmente o barco central com o adesivo real escrito "Recanto dos Sonhos" e o motor de popa Mercury. Manter os banhistas ao fundo na água.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+REMOVER OBRIGATORIAMENTE o texto de timestamp ("17 de maio de 2026 15:06") no canto inferior esquerdo. Realçar o reflexo límpido na beira da praia e a textura do alumínio.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Professional hospitality documentary photography, three rustic aluminum river skiff boats moored on the golden sandbank shoreline of Araguaia river, authentic boat hull clearly displaying the decal "Recanto dos Sonhos", black outboard Mercury motor, clear river water gently lapping the sand, people swimming in background, sunny Brazilian afternoon, sharp realistic photography, remove date stamp watermark, preserve all boat details, realistic sand grains, no AI gloss, authentic camera capture.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Foto documental realista dos três barcos de alumínio ancorados na areia dourada do Rio Araguaia. Preservar o adesivo real escrito "Recanto dos Sonhos" e os motores Mercury. Remover completamente a data e hora do rodapé. Luz natural de tarde ensolarada, texturas reais de areia e metal escovado, zero estética de render 3D.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: casa-rancho-gramado-arvores.jpg
+=================================================================
+
+DIRETIVA: Inpainting / Remoção de Carimbo / Correção de Contraluz
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+A fachada da casa azul, as árvores nativas altas e a área verde do rancho.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+REMOVER o carimbo de data. Suavizar o poste em primeiro plano ou dar foco à casa azul em meio à natureza.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Clear outdoor photograph of a blue painted country lodge building set among tall native trees and green lawn, bright midday sun and blue sky, remove date watermark, clean exposure, realistic architectural nature photography, no artificial CGI.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Visão da casa azul do rancho entre árvores altas e gramado. Remover o carimbo de data. Iluminação natural e límpida, mantendo as características reais da propriedade.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

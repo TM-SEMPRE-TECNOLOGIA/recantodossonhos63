@@ -1,0 +1,2332 @@
+/*
+
+  font-family: "Red Hat Display", sans-serif;
+  font-family: "Inter", sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+/*----------  Custom Logo Styles  ----------*/
+.header-logo img,
+.navSidebar-button-logo img,
+.footer-logo img {
+  max-height: 65px;
+  width: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
+}
+
+.sticky .header-logo img {
+  max-height: 52px;
+}
+
+/*---------- Mobile Header & MeanMenu Refinements ----------*/
+.mobile-menu-area {
+  background: var(--bg-color2, #141414) !important;
+  border-bottom: 1px solid rgba(192, 151, 99, 0.3) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
+  position: relative !important;
+  z-index: 9999 !important;
+}
+
+.mobile-menu.mean-container {
+  overflow: visible !important;
+}
+
+.mean-container .mean-bar {
+  background: transparent !important;
+  min-height: 82px !important;
+  height: 82px !important;
+  padding: 0 16px !important;
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+}
+
+.mobile-logo {
+  position: absolute !important;
+  top: 50% !important;
+  left: 16px !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  align-items: center !important;
+  z-index: 99999 !important;
+  margin: 0 !important;
+}
+
+.mobile-logo a {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.mobile-logo img {
+  max-height: 56px !important;
+  height: 56px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4)) !important;
+}
+
+.mean-container a.meanmenu-reveal {
+  position: absolute !important;
+  top: 50% !important;
+  right: 16px !important;
+  transform: translateY(-50%) !important;
+  padding: 8px !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 8px !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(192, 151, 99, 0.35) !important;
+  color: #ffffff !important;
+  transition: all 0.3s ease !important;
+}
+
+.mean-container a.meanmenu-reveal span {
+  background: #c09763 !important;
+  height: 2.5px !important;
+  width: 22px !important;
+  margin-top: 4px !important;
+  display: block !important;
+  border-radius: 2px !important;
+}
+
+.mean-container a.meanmenu-reveal span:first-child {
+  margin-top: 0 !important;
+}
+
+.mean-container .mean-nav {
+  background: #141414 !important;
+  border-top: 1px solid rgba(192, 151, 99, 0.3) !important;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7) !important;
+}
+
+.mean-container .mean-nav ul li {
+  background: #141414 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.mean-container .mean-nav ul li a {
+  background: transparent !important;
+  color: #f6f2ed !important;
+  font-family: var(--title-font, "Red Hat Display", sans-serif) !important;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  padding: 14px 20px !important;
+  transition: all 0.3s ease !important;
+}
+
+.mean-container .mean-nav ul li a:hover {
+  color: var(--primary-color, #c09763) !important;
+  padding-left: 26px !important;
+  background: rgba(255, 255, 255, 0.02) !important;
+}
+
+/*----------  Hero Sub-Title (PEIXE • TOCANTINS)  ----------*/
+.hero-section-three .hero_content .hero-sub-title {
+  font-size: 56px !important;
+  line-height: 1.2 !important;
+  letter-spacing: 12px !important;
+  margin-bottom: 35px !important;
+  font-weight: 600 !important;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 991px) {
+  .hero-section-three .hero_content .hero-sub-title {
+    font-size: 34px !important;
+    letter-spacing: 8px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-section-three .hero_content .hero-sub-title {
+    font-size: 22px !important;
+    letter-spacing: 4px !important;
+  }
+}
+
+/*----------  Dark High-Contrast Booking Box (Barra de Reserva)  ----------*/
+.hero-section-three .booking-section-one .add-bg,
+.booking-section-one .add-bg {
+  background: rgba(16, 17, 20, 0.95) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  border: 1px solid rgba(192, 151, 99, 0.45) !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 35px rgba(192, 151, 99, 0.12) !important;
+  border-radius: 20px !important;
+  padding: 24px 28px !important;
+  margin-top: -55px !important;
+  margin-bottom: 45px !important;
+  position: relative;
+  z-index: 10;
+}
+
+.booking-section-one .booking-box {
+  display: grid !important;
+  grid-template-columns: repeat(6, 1fr) !important;
+  gap: 12px !important;
+  align-items: center !important;
+}
+
+@media (max-width: 1200px) {
+  .booking-section-one .booking-box {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 14px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking-section-one .booking-box {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  .hero-section-three .booking-section-one .add-bg,
+  .booking-section-one .add-bg {
+    margin-top: -25px !important;
+    padding: 20px 16px !important;
+  }
+}
+
+.booking-section-one .booking-input-box {
+  background: rgba(255, 255, 255, 0.07) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 30px !important;
+  height: 52px !important;
+  display: flex !important;
+  align-items: center !important;
+  position: relative !important;
+  padding: 0 16px !important;
+  transition: all 0.3s ease !important;
+}
+
+.booking-section-one .booking-input-box:hover,
+.booking-section-one .booking-input-box:focus-within {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: #c09763 !important;
+  box-shadow: 0 0 16px rgba(192, 151, 99, 0.3) !important;
+}
+
+/*---------- Date Fields (Check-in & Check-out) ----------*/
+.booking-section-one .booking-input-box.date-box {
+  cursor: pointer !important;
+  padding: 6px 16px !important;
+  height: 52px !important;
+  display: flex !important;
+  align-items: center !important;
+  position: relative !important;
+}
+
+.booking-section-one .date-field-wrap {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  text-align: left !important;
+  position: relative !important;
+}
+
+.booking-section-one .date-field-label {
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.8px !important;
+  color: var(--primary-color, #c09763) !important;
+  text-transform: uppercase !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  margin-bottom: 2px !important;
+  line-height: 1 !important;
+  pointer-events: none !important;
+}
+
+.booking-section-one .date-field-label i {
+  font-size: 11px !important;
+  color: var(--primary-color, #c09763) !important;
+}
+
+.booking-section-one input#arrive,
+.booking-section-one input#arrive1,
+.booking-section-one .date-field-wrap input[type="date"] {
+  color-scheme: dark !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  font-weight: 500 !important;
+  font-size: 13.5px !important;
+  font-family: var(--text-font, "Inter", sans-serif) !important;
+  background: transparent !important;
+  border: none !important;
+  width: 100% !important;
+  height: 24px !important;
+  line-height: 24px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  outline: none !important;
+  cursor: pointer !important;
+  display: block !important;
+  opacity: 1 !important;
+}
+
+.booking-section-one input[type="date"]::-webkit-datetime-edit,
+.booking-section-one input[type="date"]::-webkit-datetime-edit-fields-wrapper,
+.booking-section-one input[type="date"]::-webkit-datetime-edit-text,
+.booking-section-one input[type="date"]::-webkit-datetime-edit-month-field,
+.booking-section-one input[type="date"]::-webkit-datetime-edit-day-field,
+.booking-section-one input[type="date"]::-webkit-datetime-edit-year-field {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.booking-section-one .date-field-wrap input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.8) sepia(100%) saturate(300%) hue-rotate(5deg) !important;
+  cursor: pointer !important;
+  opacity: 0.95 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.booking-section-one .booking-input-box select {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  font-size: 13.5px !important;
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  width: 100% !important;
+  height: 100% !important;
+  cursor: pointer;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23C09763' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 8px center !important;
+  padding-right: 22px !important;
+}
+
+.booking-section-one .booking-input-box select option {
+  background-color: #1a1b1e !important;
+  color: #ffffff !important;
+  padding: 12px 16px !important;
+}
+
+.booking-section-one .booking-button {
+  width: 100% !important;
+  display: block !important;
+}
+
+.booking-section-one .booking-button button {
+  background: #c09763 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 13.5px !important;
+  letter-spacing: 0.5px !important;
+  height: 52px !important;
+  width: 100% !important;
+  padding: 0 16px !important;
+  border-radius: 30px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+  box-shadow: 0 8px 22px rgba(192, 151, 99, 0.4) !important;
+  transition: all 0.4s ease !important;
+}
+
+.booking-section-one .booking-button button:hover {
+  background: #000000 !important;
+  color: #c09763 !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7) !important;
+}
+
+.booking-section-one .booking-button button svg {
+  margin-left: 8px !important;
+  flex-shrink: 0;
+}
+
+
+/*----------  Body CSS  ----------*/
+:root {
+  --font-size: 16px;
+  --color-white: #fff;
+  --color-white2: #f6f2ed;
+  --color-white3: #fefaf5;
+  --color-white4: #f8f6f3;
+  --color-btn: #f6f2ed4d;
+  --color-btn1: #f6f2ed1a;
+  --text-color: #717171;
+  --primary-color: #c09763;
+  --title-color: #0a0a0a;
+  --color-black1: #1e1e1e;
+  --color-gray: #696969;
+  --color-gray2: #282828;
+
+  --color-border: rgb(10 10 10 / 10%);
+  --color-border1: rgb(10 10 10 / 40%);
+  --color-border2: rgb(255 255 255 / 10%);
+  --color-white-op5: rgb(255 255 255 / 5%);
+  --color-white-op16: rgb(255 255 255 / 16%);
+  --color-white-op20: rgb(255 255 255 / 20%);
+  --color-white-op50: rgb(255 255 255 / 50%);
+  --color-white-op60: rgb(255 255 255 / 60%);
+  --color-white-op70: rgb(255 255 255 / 70%);
+  --color-white-op80: rgb(255 255 255 / 80%);
+  --color-black-op80: rgb(10 10 10 / 80%);
+  --color-black-op13: rgb(10 10 10 / 13%);
+  --color-black-op30: rgb(246 242 237 / 30%);
+  --color-black-op70: rgb(10 10 10 / 70%);
+  --color-black-op15: rgb(10 10 10 / 15%);
+  --transition: 500ms ease-in-out;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-weight-medium: 500;
+  --text-font: "Inter", sans-serif;
+  --title-font: "Red Hat Display", sans-serif;
+  --container-width: 1470px;
+
+  /* background color */
+  --bg-color1: #f6f2ed;
+  --bg-color2: #141414;
+
+  --color-gradient-1: linear-gradient(180deg, #212121 0%, #171717 100%);
+  --border-grdient-1: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  overflow-x: clip;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--title-color);
+  border-left: 1px solid var(--title-color);
+}
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: var(--title-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+:root {
+  --natural: #fff;
+}
+body {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--text-color);
+  font-weight: 400;
+  font-family: var(--text-font);
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--text-color);
+  font-weight: 400;
+  font-family: var(--text-font);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--title-color);
+  font-weight: 700;
+  font-family: var(--title-font);
+  font-style: normal;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+.align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  color: var(--text-color);
+}
+
+.text-right {
+  text-align: right;
+}
+.text-white {
+  color: var(--color-white);
+}
+a:focus,
+.btn:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+  text-decoration: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize !important;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul li {
+  list-style: none;
+}
+
+input:focus,
+button:focus {
+  border-color: none;
+  outline-color: none;
+  border: 1px solid none;
+}
+
+textarea:focus {
+  border-color: var(--text-color);
+  outline-color: var(--title-color);
+}
+
+label {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a,
+i,
+cite,
+em,
+var,
+address,
+dfn,
+ol,
+li,
+ul {
+  font-style: normal;
+  font-weight: 400;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+.section-border {
+  border-bottom: 1px solid var(--color-border);
+  flex-grow: 1;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+.image-anime {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-anime:after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  z-index: 1;
+}
+
+.image-anime:hover:after {
+  height: 250%;
+  transition: all 600ms linear;
+  background-color: transparent;
+}
+
+.reveal {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.reveal img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+}
+
+.data-img-hover {
+  position: relative;
+  width: 100%;
+}
+.data-img-hover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+.data-img-hover canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.data-img-hover canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1 !important;
+}
+.border-color {
+  border-bottom: 1px solid var(--color-border2);
+}
+
+.defult-btn a {
+  display: inline-block;
+  background: var(--primary-color);
+  font-family: var(--title-font);
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  padding: 15px 40px;
+  margin-top: 30px;
+  border-radius: 30px;
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+}
+.defult-btn a::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: var(--title-color);
+  border-radius: 30px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transition: 0.5s;
+  clip-path: polygon(50% 0, 50% 0, 50% 50%, 50% 100%, 50% 100%, 50% 50%);
+  z-index: -1;
+}
+.defult-btn a:hover::before {
+  clip-path: polygon(
+    25% -70%,
+    75% -70%,
+    120% 50%,
+    75% 170%,
+    25% 170%,
+    -20% 50%
+  );
+}
+.defult-btn a svg {
+  margin-left: 10px;
+}
+
+.auto-container {
+  position: static;
+  max-width: var(--container-width);
+  padding: 0px 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+/* Default Background */
+
+*::-moz-selection {
+  background: var(--primary-color);
+  color: var(--color-white);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--primary-color);
+  color: var(--color-white);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--primary-color);
+  color: var(--color-white);
+  text-shadow: none;
+}
+::placeholder {
+  font-size: 16px;
+  color: var(--color-white);
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: var(--color-white);
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: var(--color-white);
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+
+  color: var(--color-white);
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+
+  color: var(--color-white);
+}
+
+/* Contact Area */
+.counter_area ::-moz-selection {
+  color: #001d23;
+  text-shadow: none;
+}
+
+.contact_area ::-moz-selection {
+  color: #001d23;
+  text-shadow: none;
+}
+
+.contact_area ::selection {
+  color: #001d23;
+  text-shadow: none;
+}
+
+.contact_area ::placeholder {
+  color: #001d23;
+  font-size: 16px;
+}
+
+.contact_area ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #001d23;
+}
+
+.contact_area ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #001d23;
+}
+
+.contact_area :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #001d23;
+}
+
+.contact_area :-moz-placeholder {
+  /* Firefox 18- */
+  color: #001d23;
+}
+
+.blog_reply ::-moz-selection {
+  color: #151948;
+}
+
+.blog_reply ::-moz-selection {
+  color: #151948;
+}
+
+.blog_reply ::selection {
+  color: #151948;
+}
+
+.blog_reply::placeholder {
+  color: #151948;
+}
+
+.blog_reply ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #151948;
+}
+
+.blog_reply ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #151948;
+}
+
+.blog_reply :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #151948;
+}
+
+.blog_reply :-moz-placeholder {
+  /* Firefox 18- */
+  color: #151948;
+}
+.border_bg {
+  border-bottom: 1px solid #cccdd894;
+  padding-bottom: 120px;
+}
+.m-l-50 {
+  margin-left: 50px;
+}
+
+/* Padding Top Css */
+.pt-10 {
+  padding-top: 10px;
+}
+.pt-30 {
+  padding-top: 30px;
+}
+.pt-22 {
+  padding-top: 22px;
+}
+
+/* padding bottom css */
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.pl-130 {
+  padding-left: 130px;
+}
+
+.pr-0 {
+  padding-right: 0px;
+}
+
+.pl-0 {
+  padding-left: 0px;
+}
+
+.pl-40 {
+  padding-left: 40px;
+}
+
+.pr-40 {
+  padding-right: 40px;
+}
+
+/*==================================================*/
+/* ICON & WEBFONT NORMALIZATION                     */
+/*==================================================*/
+i[class*="fa-"], i[class*="bi-"], .fa-solid, .fa-regular, .fa-brands {
+  display: inline-block !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  text-rendering: auto !important;
+  line-height: 1 !important;
+}
+
+/*==================================================*/
+/* SEÇÃO 04: Sobre o Rancho (Proporção 342x510)    */
+/*==================================================*/
+.about-section-three .about-thumb1,
+.about-section-three .about-thumb2 {
+  position: relative !important;
+  overflow: hidden !important;
+  border-radius: 20px !important;
+}
+.about-section-three .about-thumb1 figure,
+.about-section-three .about-thumb1 img,
+.about-section-three .about-thumb2 figure,
+.about-section-three .about-thumb2 img {
+  width: 100% !important;
+  height: 480px !important;
+  object-fit: cover !important;
+  border-radius: 20px !important;
+  display: block !important;
+}
+
+/*==================================================*/
+/* SEÇÃO 05: Estrutura & Lazer (Proporção 462x380)  */
+/*==================================================*/
+.facilities-single-box .facilities-thumb,
+.facilities-single-box .facilities-thumb figure {
+  width: 100% !important;
+  height: 340px !important;
+  overflow: hidden !important;
+  border-radius: 20px !important;
+}
+.facilities-single-box .facilities-thumb img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 20px !important;
+  display: block !important;
+  transition: transform 0.6s ease !important;
+}
+.facilities-single-box:hover .facilities-thumb img {
+  transform: scale(1.05) !important;
+}
+
+/*==================================================*/
+/* SEÇÃO 07: Praia & Experiência Araguaia (464x280) */
+/*==================================================*/
+.room-suites-thumb,
+.room-suites-thumb figure {
+  width: 100% !important;
+  height: 280px !important;
+  overflow: hidden !important;
+  border-radius: 20px !important;
+}
+.room-suites-thumb figure img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 20px !important;
+  display: block !important;
+}
+
+/*==================================================*/
+/* SEÇÃO 09: Depoimentos & Galeria (320x280)        */
+/*==================================================*/
+.testimonial-section-three .testi-thumb1,
+.testimonial-section-three .testi-thumb1 figure {
+  width: 290px !important;
+  height: 340px !important;
+  overflow: hidden !important;
+  border-radius: 20px !important;
+}
+.testimonial-section-three .testi-thumb1 img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 20px !important;
+}
+.testimonial-section-three .testi-thumb2,
+.testimonial-section-three .testi-thumb2 figure,
+.testimonial-section-three .testi-thumb3,
+.testimonial-section-three .testi-thumb3 figure {
+  width: 290px !important;
+  height: 240px !important;
+  overflow: hidden !important;
+  border-radius: 20px !important;
+}
+.testimonial-section-three .testi-thumb2 img,
+.testimonial-section-three .testi-thumb3 img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 20px !important;
+}
+
+/*==================================================*/
+/* SEÇÃO 11: Como Chegar & Guia (464x340)           */
+/*==================================================*/
+.single-blog-box .blog-thumb,
+.single-blog-box .blog-thumb figure {
+  width: 100% !important;
+  height: 260px !important;
+  overflow: hidden !important;
+  border-radius: 16px !important;
+}
+.single-blog-box .blog-thumb figure img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 16px !important;
+  display: block !important;
+  transition: transform 0.5s ease !important;
+}
+.single-blog-box:hover .blog-thumb figure img {
+  transform: scale(1.05) !important;
+}
+
+/* Responsividade Mobile para Imagens */
+@media (max-width: 991px) {
+  .about-section-three .about-thumb1 img,
+  .about-section-three .about-thumb2 img {
+    height: 300px !important;
+  }
+  .testimonial-section-three .testi-thumb-wrapper {
+    margin-bottom: 40px !important;
+  }
+  .testimonial-section-three .testi-thumb1,
+  .testimonial-section-three .testi-thumb2,
+  .testimonial-section-three .testi-thumb3 {
+    width: 100% !important;
+    position: static !important;
+    margin-bottom: 15px !important;
+    height: 240px !important;
+  }
+  .testimonial-section-three .testi-thumb1 img,
+  .testimonial-section-three .testi-thumb2 img,
+  .testimonial-section-three .testi-thumb3 img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+/*==================================================*/
+/* SEÇÃO 06: Título Divisor 'ACOMODAÇÕES'           */
+/*==================================================*/
+.rooms-section-one {
+  padding: 70px 0 35px !important;
+  overflow: hidden !important;
+  text-align: center !important;
+}
+
+.rooms-section-one .rooms-title {
+  display: inline-block !important;
+  max-width: 100% !important;
+}
+
+.rooms-section-one .rooms-title h1 {
+  font-size: clamp(32px, 6.2vw, 82px) !important;
+  line-height: 1.1 !important;
+  letter-spacing: 4px !important;
+  font-weight: 900 !important;
+  color: #111111 !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  word-break: normal !important;
+  white-space: normal !important;
+}
+
+@media (max-width: 767px) {
+  .rooms-section-one {
+    padding: 40px 0 20px !important;
+  }
+  .rooms-section-one .rooms-title h1 {
+    font-size: clamp(24px, 7.5vw, 38px) !important;
+    letter-spacing: 2px !important;
+  }
+}
+
+
+
+
+/*==================================================*/
+/* VARIÁVEIS DINÂMICAS DE TESTE DE TEMA & CORES     */
+/*==================================================*/
+:root {
+  --theme-btn-accent: #c09763;
+  --theme-btn-hover: #000000;
+  --theme-btn-text: #ffffff;
+  --theme-header-bg: #0a0a0a;
+  --theme-footer-bg: #0a0a0a;
+  --theme-booking-bg: #101114;
+}
+
+/* Botões do Topo, Hero, Barra de Reserva, Facilities, Quartos e Praia */
+.header-btn .theme-btn,
+.theme-btn.btn-style-two,
+.booking-section-one .booking-button button,
+.facilities-btn.defult-btn a,
+.defult-btn a,
+.room-btn.defult-btn a,
+.explore-btn,
+.subscribe-btn,
+.hero-button a.theme-btn {
+  background: var(--theme-btn-accent) !important;
+  color: var(--theme-btn-text) !important;
+  border-color: var(--theme-btn-accent) !important;
+  transition: all 0.3s ease !important;
+}
+
+.booking-section-one .booking-button button {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Detalhes de Destaque / Dourado */
+.title-gold,
+.date-field-label,
+.date-field-label i,
+.sec-title .title-gold,
+.rooms-title span.rooms-sub-title,
+.about-section-three .section-sub-title .sub-title,
+.facilities-content h1,
+.footer-menu a:hover,
+.footer-social a:hover,
+.room-price a {
+  color: var(--theme-btn-accent) !important;
+}
+
+/* Cabeçalho */
+.hotelio-header-area,
+.hotelio-header-area.sticky {
+  background-color: var(--theme-header-bg) !important;
+  transition: background-color 0.3s ease, padding 0.3s ease !important;
+}
+
+/* ============================================================ */
+/* CABEÇALHO UNIFICADO PREMIUM (DESKTOP & MOBILE INTEGRADOS)    */
+/* ============================================================ */
+
+/* Oculta 100% qualquer barra paralela do MeanMenu */
+.mobile-menu-area {
+  display: none !important;
+}
+
+.hotelio-header-area {
+  display: flex !important;
+  align-items: center !important;
+  padding: 14px 0 !important;
+  min-height: 100px !important;
+  width: 100% !important;
+  position: relative !important;
+  z-index: 9999 !important;
+  background-color: var(--theme-header-bg, #0a0a0a) !important;
+  transition: all 0.3s ease !important;
+}
+
+.hotelio-header-area.sticky {
+  padding: 8px 0 !important;
+  min-height: 76px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7) !important;
+}
+
+.row.header-wrap {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+/* Botão do menu lateral (Hambúrguer dourado) */
+.header-menu .navSidebar-button a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 8px !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(192, 151, 99, 0.35) !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+}
+
+.header-menu .navSidebar-button a:hover {
+  background: rgba(192, 151, 99, 0.15) !important;
+  border-color: #c09763 !important;
+  transform: scale(1.05);
+}
+
+/* Logo centralizada com imponência */
+.header-logo {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.header-logo a.active_logo img,
+.header-logo a.logo_two img {
+  max-height: 84px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 auto !important;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5)) !important;
+  transition: max-height 0.3s ease !important;
+}
+
+.sticky .header-logo a.logo_two img {
+  max-height: 60px !important;
+}
+
+/* Ajustes de responsividade do cabeçalho unificado no Mobile */
+@media (max-width: 767px) {
+  .hotelio-header-area {
+    padding: 10px 0 !important;
+    min-height: 78px !important;
+  }
+  .header-logo a.active_logo img,
+  .header-logo a.logo_two img {
+    max-height: 54px !important;
+  }
+  .header-btn a {
+    padding: 9px 12px !important;
+    font-size: 11px !important;
+    letter-spacing: 0.5px !important;
+    white-space: nowrap !important;
+  }
+  .header-btn a svg {
+    margin-left: 4px !important;
+    width: 12px !important;
+  }
+  .header-menu .navSidebar-button a {
+    width: 38px !important;
+    height: 38px !important;
+  }
+}
+
+/* ============================================================ */
+/* BOTÃO RESERVAR AGORA DENTRO DA GAVETA (SIDEBAR DRAWER)       */
+/* ============================================================ */
+.xs-sidebar-widget .content-box a.theme-btn.btn-style-two {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  width: 100% !important;
+  padding: 15px 24px !important;
+  background: linear-gradient(135deg, #c09763 0%, #a67c48 100%) !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(192, 151, 99, 0.3) !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  margin-top: 15px !important;
+}
+
+.xs-sidebar-widget .content-box a.theme-btn.btn-style-two:hover {
+  background: linear-gradient(135deg, #d4a974 0%, #b88a52 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(192, 151, 99, 0.5) !important;
+}
+
+.xs-sidebar-widget .content-box a.theme-btn.btn-style-two span {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  color: #ffffff !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.xs-sidebar-widget .content-box a.theme-btn.btn-style-two i {
+  font-size: 20px !important;
+  color: #ffffff !important;
+}
+
+/* ============================================================ */
+/* SEÇÃO 10: CONDIÇÕES EXCLUSIVAS (CTA WHATSAPP DIRETO)         */
+/* ============================================================ */
+.cta-whatsapp-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media (max-width: 991px) {
+  .cta-whatsapp-wrap {
+    align-items: center;
+  }
+}
+
+.cta-whatsapp-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  padding: 18px 36px !important;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
+  color: #ffffff !important;
+  font-family: var(--title-font, "Red Hat Display", sans-serif) !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  border-radius: 50px !important;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35) !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.cta-whatsapp-btn i {
+  font-size: 22px !important;
+}
+
+.cta-whatsapp-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5) !important;
+  color: #ffffff !important;
+}
+
+.cta-whatsapp-note {
+  margin-top: 12px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cta-whatsapp-note i {
+  color: #c09763;
+}
+
+/* Rodapé */
+.main-footer-one,
+.main-footer-section {
+  background-color: var(--theme-footer-bg) !important;
+  transition: background-color 0.3s ease !important;
+}
+
+/* Barra de Reserva */
+.booking-section-one .add-bg {
+  background-color: var(--theme-booking-bg) !important;
+  border-color: var(--theme-btn-accent) !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease !important;
+}
+
+/* ====================================================== */
+/* MODAL DE VÍDEO OFICIAL DO RANCHO (#video)              */
+/* ====================================================== */
+.rancho-video-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.rancho-video-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.rancho-video-modal-dialog {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  background: #000;
+  border-radius: 16px;
+  border: 1px solid rgba(192, 151, 99, 0.4);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9), 0 0 40px rgba(192, 151, 99, 0.2);
+  overflow: hidden;
+  transform: scale(0.92);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rancho-video-modal-overlay.active .rancho-video-modal-dialog {
+  transform: scale(1);
+}
+
+.rancho-video-close {
+  position: absolute;
+  top: -45px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 26px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  z-index: 2;
+}
+
+.rancho-video-close:hover {
+  background: #c09763;
+  color: #000;
+  border-color: #c09763;
+  transform: rotate(90deg);
+}
+
+.rancho-video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  background: #000;
+}
+
+.rancho-video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
+@media (max-width: 767px) {
+  .rancho-video-close {
+    top: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
+
+
+
+/*==========================================================================
+   MÓDULO DE ENTRADA SPLASH CINEMATOGRÁFICO • RECANTO DOS SONHOS 63
+   ========================================================================== */
+.preloader, .loader {
+  display: none !important;
+}
+
+#splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0E1A14 !important; /* Verde Cerrado Nobre */
+  z-index: 9999999 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: opacity 0.85s cubic-bezier(0.4, 0, 0.2, 1), 
+              visibility 0.85s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.85s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  will-change: opacity, transform;
+}
+
+#splash-screen.splash-fade-out {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transform: scale(1.04) !important;
+  pointer-events: none !important;
+}
+
+.splash-halo {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.22) 0%, transparent 70%);
+  pointer-events: none;
+  animation: pulseHalo 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulseHalo {
+  0% { transform: scale(0.9); opacity: 0.3; }
+  100% { transform: scale(1.15); opacity: 0.8; }
+}
+
+.splash-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  opacity: 0;
+  transform: scale(0.86) translateY(14px);
+  animation: logoEntrance 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
+}
+
+@keyframes logoEntrance {
+  0% {
+    opacity: 0;
+    transform: scale(0.86) translateY(14px);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0px);
+  }
+}
+
+.splash-logo-img {
+  max-width: 310px;
+  width: 80vw;
+  height: auto;
+  filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.65)) 
+          drop-shadow(0 0 25px rgba(212, 175, 55, 0.35));
+  display: block;
+}
+
+.splash-shine {
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.45) 50%,
+    rgba(255, 215, 0, 0.35) 55%,
+    transparent 70%
+  );
+  transform: skewX(-25deg);
+  pointer-events: none;
+  animation: sweepShine 1.1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+}
+
+@keyframes sweepShine {
+  0% { left: -120%; opacity: 0; }
+  30% { opacity: 0.9; }
+  70% { opacity: 0.9; }
+  100% { left: 180%; opacity: 0; }
+}
+
+.splash-tagline {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  opacity: 0;
+  animation: taglineEntrance 0.7s ease 0.45s forwards;
+}
+
+@keyframes taglineEntrance {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.splash-line {
+  height: 1px;
+  width: 40px;
+  background: linear-gradient(90deg, transparent, #c09763, transparent);
+}
+
+.splash-tagline-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c09763;
+  font-weight: 700;
+  white-space: nowrap;
+  text-shadow: 0 0 10px rgba(192, 151, 99, 0.4);
+}
+
+.splash-progress-track {
+  position: absolute;
+  bottom: 36px;
+  width: 160px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.splash-progress-fill {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #c09763, #f7dca3);
+  animation: progressFill 1.5s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+  box-shadow: 0 0 8px #c09763;
+}
+
+@keyframes progressFill {
+  to { width: 100%; }
+}
+
+/* Calibração tipográfica do selo circular giratório (#sobre) - Tamanho grande e imponente */
+.about-section-three .circle-text text,
+.about-section-three-classic .circle-text text {
+  font-size: 28px !important;
+  word-spacing: 12px !important;
+  letter-spacing: 2px !important;
+}
+
+/* Símbolo + do contador (#estrutura) */
+.facilities-section-three .facilities-box-content .plus-symbol {
+  color: var(--primary-color, #c09763);
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+/* ====================================================== */
+/* MODAL INTERATIVO: GUIA DO HÓSPEDE & DICAS (#como-chegar) */
+/* ====================================================== */
+/* HEADER: MENU (ÍCONE) E LETRAS RIGOROSAMENTE NA MESMA LINHA */
+/* ====================================================== */
+.hotelio-header-area .header-menu {
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  gap: 14px !important;
+}
+
+.hotelio-header-area .header-sidbar-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex-shrink: 0 !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
+}
+
+.hotelio-header-area .header-sidbar-button a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.hotelio-header-area .header-sidbar-button a svg {
+  display: block !important;
+  margin: 0 !important;
+  vertical-align: middle !important;
+}
+
+.hotelio-header-area .header-menu ul.nav_scroll {
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  white-space: nowrap !important;
+}
+
+.hotelio-header-area .header-menu ul.nav_scroll li {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.hotelio-header-area .header-menu ul.nav_scroll li a {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 26px 8px !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+  letter-spacing: 0.2px !important;
+}
+
+@media (min-width: 1400px) {
+  .hotelio-header-area .header-menu ul.nav_scroll li a {
+    padding: 30px 11px !important;
+    font-size: 15.5px !important;
+  }
+}
+
+.sticky .hotelio-header-area .header-menu ul.nav_scroll li a {
+  padding: 18px 8px !important;
+}
+
+/* ====================================================== */
+/* CONTROLE DO BOTÃO VOLTAR AO TOPO DURANTE MODAIS        */
+/* ====================================================== */
+body.modal-open .prgoress_indicator,
+.prgoress_indicator.modal-hidden {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transform: translateY(30px) !important;
+  transition: all 0.2s ease !important;
+}
+
+/* ====================================================== */
+/* MODAL DE VÍDEO OFICIAL DO RANCHO                      */
+/* ====================================================== */
+.rancho-video-modal-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: rgba(0, 0, 0, 0.88) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  z-index: 100000000000 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: opacity 0.3s ease, visibility 0.3s ease !important;
+}
+
+.rancho-video-modal-overlay.active {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.rancho-video-modal-dialog {
+  max-width: 860px !important;
+  width: 100% !important;
+  background: linear-gradient(160deg, #1c1c1c 0%, #141414 100%) !important;
+  border: 1px solid rgba(192, 151, 99, 0.45) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.95), 0 0 50px rgba(192, 151, 99, 0.18) !important;
+  overflow: hidden !important;
+  position: relative !important;
+  transform: scale(0.92) translateY(20px) !important;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.rancho-video-modal-overlay.active .rancho-video-modal-dialog {
+  transform: scale(1) translateY(0) !important;
+}
+
+.rancho-video-close {
+  position: absolute !important;
+  top: 14px !important;
+  right: 14px !important;
+  z-index: 10 !important;
+  background: rgba(0, 0, 0, 0.7) !important;
+  border: 1px solid rgba(192, 151, 99, 0.4) !important;
+  color: #ffffff !important;
+  font-size: 26px !important;
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+  backdrop-filter: blur(6px) !important;
+}
+
+.rancho-video-close:hover {
+  background: #c09763 !important;
+  color: #141414 !important;
+  transform: rotate(90deg) scale(1.08) !important;
+}
+
+.rancho-video-wrapper {
+  position: relative !important;
+  width: 100% !important;
+  padding-bottom: 56.25% !important;
+  background: #000 !important;
+}
+
+.rancho-video-wrapper video {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  border-radius: 0 0 20px 20px !important;
+}
+
+/* ====================================================== */
+/* MODAL INTERATIVO: GUIA DO HÓSPEDE & DICAS (LUXURY)     */
+/* ====================================================== */
+.dicas-modal-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: rgba(0, 0, 0, 0.88) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  z-index: 100000000000 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: opacity 0.3s ease, visibility 0.3s ease !important;
+}
+
+.dicas-modal-overlay.active {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.dicas-modal-dialog {
+  background: linear-gradient(160deg, #1e1e1e 0%, #121212 100%) !important;
+  border: 1px solid rgba(192, 151, 99, 0.4) !important;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.95), 0 0 45px rgba(192, 151, 99, 0.15) !important;
+  border-radius: 22px !important;
+  max-width: 660px !important;
+  width: 100% !important;
+  max-height: 90vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  position: relative !important;
+  transform: scale(0.92) translateY(20px) !important;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.dicas-modal-overlay.active .dicas-modal-dialog {
+  transform: scale(1) translateY(0) !important;
+}
+
+.dicas-modal-header {
+  padding: 26px 32px 18px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  position: relative !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+}
+
+.dicas-modal-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, #c09763 0%, rgba(192, 151, 99, 0.3) 50%, transparent 100%);
+}
+
+.dicas-modal-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  background: rgba(192, 151, 99, 0.15) !important;
+  border: 1px solid rgba(192, 151, 99, 0.4) !important;
+  color: #c09763 !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  padding: 5px 12px !important;
+  border-radius: 20px !important;
+  margin-bottom: 8px !important;
+  box-shadow: 0 2px 10px rgba(192, 151, 99, 0.15) !important;
+}
+
+.dicas-modal-title {
+  color: #ffffff !important;
+  font-family: var(--title-font) !important;
+  font-size: 23px !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  margin: 0 !important;
+  letter-spacing: 0.3px !important;
+}
+
+.dicas-modal-close {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(192, 151, 99, 0.35) !important;
+  color: #c09763 !important;
+  font-size: 22px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+  flex-shrink: 0 !important;
+  margin-left: 15px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+.dicas-modal-close:hover {
+  background: #c09763 !important;
+  border-color: #c09763 !important;
+  color: #141414 !important;
+  transform: rotate(90deg) scale(1.05) !important;
+}
+
+.dicas-modal-body {
+  padding: 26px 32px !important;
+  overflow-y: auto !important;
+  color: #d1d5db !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: #c09763 rgba(255, 255, 255, 0.05) !important;
+}
+
+.dicas-modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+.dicas-modal-body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+}
+.dicas-modal-body::-webkit-scrollbar-thumb {
+  background: #c09763;
+  border-radius: 10px;
+}
+
+.dicas-modal-body h4 {
+  color: #c09763 !important;
+  font-family: var(--title-font) !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  margin: 20px 0 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.dicas-modal-body h4:first-child {
+  margin-top: 0 !important;
+}
+
+.dicas-checklist {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 12px 0 !important;
+}
+
+.dicas-checklist li {
+  position: relative !important;
+  padding-left: 26px !important;
+  margin-bottom: 10px !important;
+  color: #e8eaed !important;
+  line-height: 1.65 !important;
+}
+
+.dicas-checklist li::before {
+  content: "✓" !important;
+  position: absolute !important;
+  left: 0 !important;
+  color: #c09763 !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+}
+
+.dicas-highlight-box {
+  background: rgba(192, 151, 99, 0.08) !important;
+  border: 1px solid rgba(192, 151, 99, 0.28) !important;
+  border-left: 4px solid #c09763 !important;
+  border-radius: 12px !important;
+  padding: 16px 20px !important;
+  margin: 18px 0 !important;
+  font-size: 14.5px !important;
+  color: #f6f2ed !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+.dicas-modal-footer {
+  padding: 18px 32px 24px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  display: flex !important;
+  gap: 12px !important;
+  flex-wrap: wrap !important;
+}
+
+.dicas-btn-primary {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  background: linear-gradient(135deg, #c09763 0%, #a47c4b 100%) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  padding: 13px 24px !important;
+  border-radius: 30px !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(192, 151, 99, 0.35) !important;
+  flex: 1 !important;
+  min-width: 200px !important;
+  text-align: center !important;
+}
+
+.dicas-btn-primary:hover {
+  background: linear-gradient(135deg, #d3ab77 0%, #b88d59 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 22px rgba(192, 151, 99, 0.5) !important;
+  color: #ffffff !important;
+}
+
+.dicas-btn-secondary {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  padding: 13px 22px !important;
+  border-radius: 30px !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.dicas-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: #c09763 !important;
+  color: #ffffff !important;
+}
+
+.btn-open-dica {
+  cursor: pointer !important;
+}
+
+/* ====================================================== */
+/* SEÇÃO DE ACOMODAÇÕES: DESIGN COERENTE NO MOBILE (< 992px) */
+/* ====================================================== */
+@media (max-width: 991px) {
+  .rooms-section-two {
+    background-image: none !important;
+    background: var(--bg-color2, #141414) !important;
+    padding: 60px 16px !important;
+  }
+
+  .rooms-section-two .row {
+    row-gap: 26px !important;
+  }
+
+  .rooms-section-two .room-item {
+    background: linear-gradient(175deg, #1c1c1c 0%, #141414 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 20px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+  }
+
+  .rooms-section-two .room-item:hover {
+    border-color: rgba(192, 151, 99, 0.4) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85), 0 0 25px rgba(192, 151, 99, 0.12) !important;
+  }
+
+  .rooms-section-two .room-item:after {
+    display: none !important;
+  }
+
+  /* Thumb do quarto no Mobile */
+  .room-mobile-thumb {
+    position: relative !important;
+    width: 100% !important;
+    height: 230px !important;
+    overflow: hidden !important;
+  }
+
+  .room-mobile-thumb img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    transition: transform 0.6s ease !important;
+  }
+
+  .room-mobile-badge {
+    position: absolute !important;
+    top: 14px !important;
+    left: 14px !important;
+    background: rgba(10, 10, 10, 0.85) !important;
+    backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(192, 151, 99, 0.45) !important;
+    color: #c09763 !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+    padding: 4px 12px !important;
+    border-radius: 20px !important;
+    z-index: 2 !important;
+  }
+
+  /* Preço / Sob Consulta no Mobile */
+  .rooms-section-two .room-price {
+    position: absolute !important;
+    top: 14px !important;
+    right: 14px !important;
+    z-index: 2 !important;
+    margin: 0 !important;
+  }
+
+  .rooms-section-two .room-price a {
+    display: inline-block !important;
+    background: rgba(192, 151, 99, 0.95) !important;
+    color: #141414 !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+    padding: 5px 14px !important;
+    border-radius: 20px !important;
+    opacity: 1 !important;
+    transform: none !important;
+    margin: 0 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  /* Conteúdo e Título no Mobile */
+  .rooms-section-two .room-content {
+    padding: 20px 20px 0 !important;
+    transform: none !important;
+  }
+
+  .rooms-section-two .room-title {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    color: var(--color-white2, #f6f2ed) !important;
+    margin-bottom: 8px !important;
+    font-family: var(--title-font) !important;
+    font-weight: 700 !important;
+  }
+
+  .rooms-section-two .room-desc {
+    opacity: 1 !important;
+    position: static !important;
+    transform: none !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 14.5px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 16px !important;
+  }
+
+  /* Informações / Comodidades em Chips */
+  .rooms-section-two .room-info {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    padding: 14px 20px !important;
+    margin: 0 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+
+  .rooms-section-two .room-info::before,
+  .rooms-section-two .room-info::after {
+    display: none !important;
+  }
+
+  .rooms-section-two .room-info p {
+    margin: 0 !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding: 6px 12px !important;
+    border-radius: 8px !important;
+    color: #e5e7eb !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+
+  .rooms-section-two .room-info p i {
+    color: #c09763 !important;
+    margin-right: 6px !important;
+  }
+
+  /* Seta decorativa oculta no mobile */
+  .rooms-section-two .room-arrow {
+    display: none !important;
+  }
+
+  /* Botão de WhatsApp no Mobile: 100% visível, chamativo e com cores oficiais */
+  .rooms-section-two .room-btn.defult-btn {
+    padding: 18px 20px 22px !important;
+    width: 100% !important;
+  }
+
+  .rooms-section-two .defult-btn a {
+    opacity: 1 !important;
+    position: static !important;
+    transform: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    padding: 14px 20px !important;
+    background: linear-gradient(135deg, #c09763 0%, #a27a47 100%) !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    letter-spacing: 0.5px !important;
+    border-radius: 30px !important;
+    box-shadow: 0 4px 15px rgba(192, 151, 99, 0.35) !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+  }
+
+  .rooms-section-two .defult-btn a i {
+    font-size: 18px !important;
+    color: #ffffff !important;
+  }
+}
+
+/* ====================================================== */
+/* FAIXA DE CTA: PÔR DO SOL NO ARAGUAIA COM ALTO CONTRASTE */
+/* ====================================================== */
+.subcribe-section-two {
+  position: relative !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-attachment: fixed !important;
+  overflow: hidden !important;
+}
+
+.subcribe-section-two::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(180deg, rgba(14, 14, 14, 0.65) 0%, rgba(10, 10, 10, 0.8) 100%) !important;
+  z-index: 1 !important;
+}
+
+.subcribe-section-two .auto-container {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* ============================================================ */
+/* INDICADOR DE SCROLL LATERAL (ESTRUTURA & LAZER - MOBILE)     */
+/* ============================================================ */
+.facilities-mobile-scroll-hint {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  margin: 0 auto 20px auto !important;
+  padding: 8px 18px !important;
+  width: fit-content !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(192, 151, 99, 0.35) !important;
+  border-radius: 30px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+}
+
+.facilities-mobile-scroll-hint .scroll-hint-text {
+  font-family: var(--title-font, "Red Hat Display", sans-serif) !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.6px !important;
+  text-transform: uppercase !important;
+  color: var(--primary-color, #c09763) !important;
+}
+
+.facilities-mobile-scroll-hint .scroll-arrow-left,
+.facilities-mobile-scroll-hint .scroll-arrow-right {
+  color: #ffffff !important;
+  font-size: 12px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  animation: hint-bounce 1.6s ease-in-out infinite alternate !important;
+}
+
+.facilities-mobile-scroll-hint .scroll-arrow-left {
+  animation-direction: alternate-reverse !important;
+}
+
+@keyframes hint-bounce {
+  0% {
+    transform: translateX(0);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(4px);
+    opacity: 1;
+    color: #c09763;
+  }
+}
+
+
+
+

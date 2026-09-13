@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: estrada-acesso-fachada-rancho.jpg
+=================================================================
+
+DIRETIVA: Inpainting / Remoção de Carimbo / Enquadramento de Chegada
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+A estrada de terra sombreada que dá acesso à casa do rancho, o céu azul límpido e a cerca com coqueiro.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+REMOVER OBRIGATORIAMENTE o carimbo de data ("22 de março de 2026 13:20"). Realçar as cores naturais da terra e da vegetação para acolher o visitante.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Scenic dirt road approach leading to a welcoming countryside retreat home, bright blue sky with white clouds, green trees lining the sunny path, small palm tree, remove date stamp watermark, authentic rural road photograph, sharp natural textures, documentary travel style, no 3D rendering.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Foto da estrada de terra de chegada ao rancho com céu azul ensolarado e árvores na beira do caminho. Remover o carimbo de data. Cores naturais e acolhedoras para guiar o hóspede na seção Como Chegar, sem render 3D.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

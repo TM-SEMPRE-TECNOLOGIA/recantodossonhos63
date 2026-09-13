@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: grupo-amigos-portal-coracao.jpg
+=================================================================
+
+DIRETIVA: Color Grading / Realce de Nitidez em Grupo
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+O grupo grande de pessoas sorrindo dentro da água sob o portal de coração.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+Equilibrar a exposição do céu e a água transparente com fundo de areia dourada. Preservar a autenticidade e espontaneidade de cada pessoa.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Group photo of friends and family enjoying vacation in crystal clear shallow river waters around a heart-shaped monument, bright sun, ripples of clear water over sand, authentic vacation memory, natural color correction, sharp focus, no synthetic smoothing, real documentary photo.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Foto de grupo de amigos e família reunidos dentro da água no Rio Araguaia. Correção de cor natural para destacar a água límpida e a luz do sol, preservando a textura real da foto sem intervenção artificial nos rostos.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

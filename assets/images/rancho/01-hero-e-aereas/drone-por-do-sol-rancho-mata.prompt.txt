@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: drone-por-do-sol-rancho-mata.jpg
+=================================================================
+
+DIRETIVA: Realce de Iluminação / Dynamic Range / Pôr do Sol
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+A estrutura real do rancho em meio à mata, a estrada de terra que leva até a margem do Rio Araguaia e a silhueta da ilha ao fundo.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+Recuperar detalhes nas sombras da copa das árvores (sem ruído digital) e intensificar a luz dourada (golden hour) refletida no espelho de água do rio.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Atmospheric aerial photograph of a rustic riverside eco-lodge nestled in thick Brazilian Cerrado woodland, dirt path leading to the vast Araguaia River, warm golden hour sunset glowing on the horizon and reflecting on the water surface, soft natural shadows, authentic 35mm filmic lighting, documentary aerial shot, no CGI smoothing, organic tree canopy details, natural lens bloom.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Fotografia aérea do rancho ecológico no cerrado tocantinense à beira do Rio Araguaia. Pôr do sol dourado refletindo na água, estrada de terra entre a mata nativa. Recuperação suave de sombras nas árvores, luz quente natural de fim de tarde, sem renderização artificial de IA, texturas reais de folhas e terra.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: varanda-gourmet-sinuca-piscina.jpg
+=================================================================
+
+DIRETIVA: Inpainting / Remoção de Carimbo / Iluminação de Sombras
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+O galpão/varanda com a mesa de sinuca/bilhar à esquerda, o balcão, a piscina e mesa de pedra no gramado ensolarado à direita.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+REMOVER OBRIGATORIAMENTE a data ("17 de setembro de 2025 10:43"). Clarear o interior sombreado da varanda para a mesa de sinuca ficar bem visível e convidativa.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Spacious open-air covered veranda of a Brazilian riverside lodge featuring a classic pool billiard table, seamlessly connected to a sunny green lawn with a round swimming pool and umbrella table, bright daylight outside, balanced fill light inside the porch revealing billiard table details, remove timestamp, authentic hospitality photo, realistic concrete floor and wooden beam textures, zero artificial render.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Foto da varanda gourmet ampla com mesa de bilhar/sinuca bem iluminada, conectada ao gramado ensolarado com a piscina ao fundo. Remover a data do rodapé. Iluminação equilibrada entre a área coberta e o sol lá fora, mantendo texturas reais do piso e da estrutura.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

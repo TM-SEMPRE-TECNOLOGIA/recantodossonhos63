@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: tenda-privativa-praia-araguaia-02.jpg
+=================================================================
+
+DIRETIVA: Inpainting / Remoção de Carimbo / Enquadramento Aberto
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+A tenda principal em primeiro plano e as outras tendas ao longe no banco de areia, mostrando a amplitude da praia de rio.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+REMOVER a data ("23 de julho de 2026 8:52 AM"). Equilibrar as sombras duras do sol da manhã para dar ar convidativo.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Wide angle realistic photo of white beach event tents along the vast sandbar of Araguaia river, bright sunny summer day, clear blue water, authentic natural textures of dry and wet sand, remove date timestamp, documentary travel style, natural sun reflections on water, zero digital CGI render.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Foto aberta da praia do Araguaia com a tenda privativa e cadeiras na areia. Remover o carimbo de data. Realce da areia fofa e do contraste natural com a água limpa do rio, preservando o aspecto 100% fotográfico.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

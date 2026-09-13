@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: jardim-noturno-iluminado.jpg
+=================================================================
+
+DIRETIVA: Inpainting / Remoção de Carimbo / Ambientação Noturna
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+O gramado verde, a mesa de pedra, os vasos de plantas e a iluminação noturna do jardim.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+REMOVER a data do rodapé ("11 de abril de 2026 18:43"). Suavizar o farol do carro na lateral esquerda, dando ênfase a uma iluminação acolhedora de descanso noturno no rancho.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Nighttime photograph of a quiet country lodge garden, lush green lawn illuminated by warm garden lights, circular stone patio table and benches, lush tropical trees against twilight night sky, calm relaxing atmosphere, remove date stamp watermark, realistic nighttime exposure, natural shadows, no artificial neon.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Foto noturna do jardim e gramado do rancho iluminado, mesa de pedra e árvores ao fundo sob o céu crepuscular. Remover o carimbo de data. Luz quente e acolhedora de fim de noite no campo, sem ruído exagerado e sem render falso.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

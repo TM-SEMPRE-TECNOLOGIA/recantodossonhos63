@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: chales-modulares-externos-01.jpg
+=================================================================
+
+DIRETIVA: Inpainting / Limpeza de Terreno / Remoção de Carimbo
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+Os dois chalés modulares externos com estrutura metálica e telhado branco, a árvore central que faz sombra e a mata ao redor.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+REMOVER a data ("3 de maio de 2026 15:02"). Limpar pequenas folhas soltas e substituir as cadeiras plásticas por banquinhos ou cadeiras de madeira na varandinha dos chalés. Luz solar suave entre os galhos.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Two modern modular eco-cabins elevated in a shaded clearing surrounded by native Cerrado trees, white corrugated siding with front porch decks, large central shade tree casting dappled sunlight on the ground, authentic eco-lodge photo, remove date timestamp, clean realistic textures of metal and wood, no plastic render.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Chalés modulares suspensos na mata do rancho com varandinha sob a copa de árvore nativa. Remover o carimbo de data. Realçar a luz natural filtrada pelas folhas, texturas nítidas de metal, madeira e terra, preservando a identidade real da pousada.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: por-do-sol-rio-araguaia.jpg
+=================================================================
+
+DIRETIVA: Ajuste de Luz / Silhueta Natural
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+A imensidão do rio e a linha do horizonte com as margens da mata.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+Aumentar a faixa dinâmica dos reflexos dourados na água e o gradiente do céu ao pôr do sol, mantendo o grão fotográfico natural.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Authentic golden hour sunset photograph directly over the calm Araguaia river, vibrant warm amber and gold light reflection across water ripples, silhouette of distant riverbank forest, analog camera look, 50mm f/4, natural exposure, organic film grain, zero artificial glow, realistic documentary nature shot.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Foto real de pôr do sol sobre as águas calmas do Rio Araguaia. Reflexo âmbar e dourado nas ondulações da água, silhueta da mata nas margens, estética fotográfica natural com leve textura de filme, sem pós-processamento artificial.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

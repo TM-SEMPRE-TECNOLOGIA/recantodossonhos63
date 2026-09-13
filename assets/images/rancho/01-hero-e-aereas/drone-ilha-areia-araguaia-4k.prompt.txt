@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: drone-ilha-areia-araguaia-4k.jpg
+=================================================================
+
+DIRETIVA: Color Grading / Upscale / Realce Fotográfico (SEM IA GENERATIVA PLÁSTICA)
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+Manter 100% da geografia real: o banco de areia exato, a vegetação ciliar nativa, a transparência verde-esmeralda da água e as tendas reais montadas.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+Realçar a nitidez dos detalhes da areia submersa e da correnteza. Aumentar levemente o contraste e a saturação natural das cores quentes da areia e do verde da floresta. Sem aspecto de maquete ou render.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Editorial drone landscape photography of the Araguaia River sand island in Tocantins Brazil, crystalline emerald green water with natural shallow sand ripples, deep lush riparian forest, bright natural sunlight, genuine aerial camera photograph, DJI Mavic 3 Pro Cine 4K raw, realistic natural color grade, subtle micro-contrast, zero CGI, zero 3D render, uncompressed authentic textures.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Fotografia aérea editorial com drone do banco de areia no Rio Araguaia, Peixe Tocantins. Água cristalina com tons esmeralda naturais revelando ondulações de areia rasa, mata ciliar densa e preservada, luz solar natural sem exagero. Textura de foto real de alta resolução, zero efeito plástico de render 3D, zero aspecto artificial.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

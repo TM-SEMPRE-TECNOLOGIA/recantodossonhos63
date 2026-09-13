@@ -1,0 +1,5 @@
+node_modules/
+.tempmediaStorage/
+tour_frames/
+*.pyc
+__pycache__/

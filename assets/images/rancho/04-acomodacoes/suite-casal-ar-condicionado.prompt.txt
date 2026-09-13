@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: suite-casal-ar-condicionado.jpg
+=================================================================
+
+DIRETIVA: Interior Design Uplift / Preservação Arquitetônica Estrutural
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+CRUCIAL: Manter a estrutura EXATA do quarto: cama de casal na mesma posição à esquerda, mesa de apoio/estudo ao centro, parede de fundo salmão/terracota, aparelho de ar-condicionado na parede direita, teto e paredes laterais idênticos.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+REMOVER o carimbo de data ("17 de maio de 2026 09:53"). Substituir a colcha por um enxoval de algodão acolhedor bem arrumado em tons claros/neutros com travesseiros confortáveis (com dobras naturais de tecido, sem aspecto liso de render). Substituir a cadeira de plástico branca por uma cadeira rústica de madeira clara. Luz natural suave entrando pela porta.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Editorial hospitality photo of a neat rustic guest bedroom, comfortable queen bed made with crisp textured beige and white cotton linen with natural soft folds and plush pillows, salmon-terracotta accent wall with framed sunset art, light wooden desk with a simple matching wooden chair, split air conditioning unit on white rustic wall, natural soft morning daylight, cozy and impeccably clean, authentic architectural photography, realistic wood and fabric textures, strictly NO plastic 3D render look, remove timestamp.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Foto de quarto de rancho acolhedor e impecavelmente arrumado. Cama de casal com roupa de cama de algodão bege/branco com dobras e texturas naturais, parede de cabeceira em tom terracota com quadros náuticos, escrivaninha de madeira com cadeira de madeira simples, ar-condicionado na parede. Remover carimbo de data. Iluminação natural aconchegante, mantendo a estrutura original do quarto, zero efeito de render 3D computadorizado.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

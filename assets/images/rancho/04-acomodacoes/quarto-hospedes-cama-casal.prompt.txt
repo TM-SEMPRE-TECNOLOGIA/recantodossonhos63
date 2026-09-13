@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: quarto-hospedes-cama-casal.jpg
+=================================================================
+
+DIRETIVA: Inpainting / Remoção de Carimbo / Arrumação Acolhedora
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+A disposição exata: cama de casal à esquerda, escrivaninha de madeira, parede salmão ao fundo e ar-condicionado na direita.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+REMOVER a data ("3 de maio de 2026 20:09"). Substituir a cadeira plástica por cadeira de madeira e vestir a cama com roupa de cama arrumada em tons neutros acolhedores.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Clean rustic lodge bedroom interior, neatly arranged double bed with warm neutral duvet and pillows, wooden workstation desk, split AC unit, soft warm indoor lamp light, authentic room photo, remove timestamp, real fabric textures, realistic hospitality photography, no artificial AI smoothness.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Quarto de hóspedes com cama de casal arrumada, escrivaninha e ar-condicionado. Remover o carimbo de data. Roupa de cama confortável em tons neutros, iluminação quente aconchegante, mantendo a estrutura real do cômodo.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

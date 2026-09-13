@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: piscina-aquecida-deck-azul.jpg
+=================================================================
+
+DIRETIVA: Equilíbrio de Luz / Realce de Cor / Textura
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+A piscina redonda elevada com deck azul, a casa com toldo azul ao fundo, a churrasqueira de alvenaria e o gramado verde.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+Diminuir a dureza das sombras dos galhos das árvores que cruzam a frente da foto. Valorizar a água limpa da piscina e o verde do gramado sem saturação radioativa.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Sunny afternoon photograph of a private country lodge backyard, round plunge pool with vibrant blue painted deck surrounded by green grass lawn, rustic outdoor barbecue station and covered veranda in background, native shade trees, softened natural branch shadows, crisp clean water, authentic architectural photography, realistic textures of brick and grass, no 3D CGI.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Fotografia da área externa do rancho com piscina redonda de deck azul no gramado, casa e churrasqueira ao fundo. Suavizar sombras duras dos galhos, realçar a água límpida da piscina e o gramado verde. Estilo fotográfico autêntico, sem acabamento liso de render de arquitetura 3D.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

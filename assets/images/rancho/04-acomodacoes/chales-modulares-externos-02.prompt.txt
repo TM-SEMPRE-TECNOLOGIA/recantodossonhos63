@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: chales-modulares-externos-02.jpg
+=================================================================
+
+DIRETIVA: Inpainting / Remoção de Objeto e Carimbo
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+Os dois chalés modulares com as portas abertas revelando o interior aconchegante.
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+REMOVER OBRIGATORIAMENTE o rastelo/vassoura vermelha caído no chão no canto inferior esquerdo. REMOVER a data ("3 de maio de 2026 15:04").
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Exterior view of two rustic modular guest cabins in wooded grove with entrance doors open, shaded natural ground, remove red leaf rake from bottom left ground, remove timestamp watermark, warm sunny afternoon light, natural architectural photography, realistic bark and leaf textures, zero CGI.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Visão externa dos dois chalés modulares na mata com portas abertas. Remover o rastelo vermelho do chão e o carimbo de data. Iluminação natural de tarde ensolarada, aspecto 100% fotográfico.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.

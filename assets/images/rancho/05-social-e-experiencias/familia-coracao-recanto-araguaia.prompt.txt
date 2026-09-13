@@ -1,0 +1,19 @@
+=================================================================
+PROMPT DE TRATAMENTO / AJUSTE: familia-coracao-recanto-araguaia.jpg
+=================================================================
+
+DIRETIVA: Realce Fotográfico / Denoise / Luz Natural (PRESERVAR PESSOAS E IDENTIDADE)
+
+[1] O QUE DEVE SER PRESERVADO (NÃO ALTERAR):
+CRUCIAL: Manter a família real (pais e filhos com seus rostos e sorrisos autênticos), as camisas de pesca com proteção UV e o portal de coração com o letreiro oficial "@Recanto dos Sonhos 63".
+
+[2] O QUE DEVE SER AJUSTADO / CORRIGIDO:
+NÃO ALTERAR OS ROSTOS. Apenas elevar a transparência das ondulações cristalinas da água e o azul do céu. Realce sutil de nitidez nos olhos e nas camisas.
+
+[3] PROMPT PRONTO PARA IA (Magnific / Midjourney / FLUX / Inpainting):
+Crisp lifestyle family vacation portrait, happy family standing in waist-deep crystal clear river water inside a decorative heart sculpture with sign "Recanto dos Sonhos 63", bright sunny blue sky, beautiful shimmering water ripples revealing sandy bottom, authentic happy expressions, preserve exact real faces and clothing, high resolution documentary photography, no AI facial distortion, no plastic skin smoothing.
+
+[4] DIRETRIZ EM PORTUGUÊS (Photoshop / Lightroom / Generative Fill):
+Retrato fotográfico autêntico de família aproveitando as águas cristalinas do Rio Araguaia no portal de coração com a placa @Recanto dos Sonhos 63. Preservar 100% os rostos e roupas originais. Realçar apenas a transparência da água e a vivacidade do sol, sem distorção ou filtro artificial na pele.
+
+AVISO: Manter a granulação e imperfeições naturais da foto real. Não aplicar filtros que deixem texturas plásticas ou com cara de maquete 3D.
