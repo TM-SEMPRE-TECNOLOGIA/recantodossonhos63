@@ -2328,5 +2328,21 @@ body.modal-open .prgoress_indicator,
 }
 
 
+/* ---------- Hero Title — RIO TOCANTINS responsive fix ---------- */
+/* clamp(min, preferred, max): ajusta o tamanho automaticamente ao viewport */
+.hero-section-three .hero_content .hero-title {
+  font-size: clamp(72px, 12vw, 160px) !important;
+  line-height: 1 !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  letter-spacing: -2px;
+}
 
-
+@media (max-width: 767px) {
+  .hero-section-three .hero_content .hero-title {
+    font-size: clamp(44px, 11vw, 80px) !important;
+    letter-spacing: -1px;
+    white-space: normal;
+  }
+}
