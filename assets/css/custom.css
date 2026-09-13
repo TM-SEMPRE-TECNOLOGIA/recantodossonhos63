@@ -2346,3 +2346,48 @@ body.modal-open .prgoress_indicator,
     white-space: normal;
   }
 }
+
+/* ============================================================
+   CHALÉ MOBILE CAROUSEL — Recanto dos Sonhos 63
+   Ativo apenas em mobile (d-lg-none). 3 fotos com dots.
+   ============================================================ */
+.chale-carousel-mobile {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.chale-carousel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+  width: 300%;
+}
+.chale-slide {
+  flex: 0 0 33.333%;
+  width: 33.333%;
+}
+.chale-slide img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+.chale-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 7px;
+  z-index: 10;
+}
+.chale-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.chale-dot.active {
+  background: #C09763;
+}
