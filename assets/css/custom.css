@@ -2391,3 +2391,44 @@ body.modal-open .prgoress_indicator,
 .chale-dot.active {
   background: #C09763;
 }
+
+/* ============================================================
+   HERO SUB-TITLE RESPONSIVO (Desktop vs Mobile)
+   Desktop: LAZER · PESCA · CONFORTO
+   Mobile:  LAZER · PESCA
+                  &
+            CONFORTO
+   ============================================================ */
+@media (min-width: 768px) {
+  .hero-sub-mobile {
+    display: none !important;
+  }
+  .hero-sub-desktop {
+    display: block !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-sub-desktop {
+    display: none !important;
+  }
+  .hero-section-three .hero_content .hero-sub-title.hero-sub-mobile {
+    display: block !important;
+    font-size: clamp(20px, 5.8vw, 30px) !important;
+    letter-spacing: 4px !important;
+    line-height: 1.35 !important;
+    margin-bottom: 30px !important;
+    text-align: center !important;
+  }
+  .hero-section-three .hero_content .hero-sub-title.hero-sub-mobile .hero-amp {
+    display: inline-block !important;
+    color: #c09763 !important;
+    font-size: 1.15em !important;
+    line-height: 1.2 !important;
+    margin: 3px 0 !important;
+    letter-spacing: 0 !important;
+    font-family: 'Newsreader', Georgia, serif !important;
+    font-style: italic !important;
+  }
+}
+
