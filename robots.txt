@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://recantodossonhos63.com.br/sitemap.xml
