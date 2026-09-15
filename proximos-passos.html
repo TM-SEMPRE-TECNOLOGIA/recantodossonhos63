@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Próximos Passos & Checklist Pós-Lançamento | Recanto dos Sonhos 63</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --surface-subtle: #f1f5f9;
+      --border: #e2e8f0;
+      --border-focus: #cbd5e1;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-light: #64748b;
+      --primary: #1e3a8a;
+      --primary-soft: #eff6ff;
+      --primary-border: #bfdbfe;
+      --success: #15803d;
+      --success-soft: #f0fdf4;
+      --success-border: #bbf7d0;
+      --amber: #b45309;
+      --amber-soft: #fffbeb;
+      --amber-border: #fde68a;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 40px 20px 80px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    /* Top Bar / Header */
+    .header-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 28px;
+    }
+
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      border: 1px solid var(--primary-border);
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+
+    .meta-item {
+      font-size: 13px;
+    }
+
+    .meta-label {
+      color: var(--text-light);
+      display: block;
+      margin-bottom: 2px;
+      font-size: 12px;
+    }
+
+    .meta-value {
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .meta-value a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .meta-value a:hover {
+      text-decoration: underline;
+    }
+
+    /* Progress Box */
+    .progress-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 18px 24px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .progress-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .progress-bar-bg {
+      width: 100%;
+      height: 8px;
+      background: var(--surface-subtle);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: var(--primary);
+      width: 40%;
+      border-radius: 999px;
+      transition: width 0.3s ease;
+    }
+
+    /* Section Cards */
+    .section-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+
+    .section-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    /* Checklist Items */
+    .checklist-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: #ffffff;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .check-item:hover {
+      background: #fafafa;
+      border-color: var(--border-focus);
+    }
+
+    .check-item.done {
+      background: var(--success-soft);
+      border-color: var(--success-border);
+    }
+
+    .check-item input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      margin-top: 2px;
+      accent-color: var(--primary);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .check-content {
+      flex: 1;
+    }
+
+    .check-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .check-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .check-item.done .check-title {
+      text-decoration: line-through;
+      color: #15803d;
+    }
+
+    .badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .badge-done {
+      background: var(--success-soft);
+      color: var(--success);
+      border: 1px solid var(--success-border);
+    }
+
+    .badge-pending {
+      background: var(--amber-soft);
+      color: var(--amber);
+      border: 1px solid var(--amber-border);
+    }
+
+    .badge-optional {
+      background: var(--surface-subtle);
+      color: var(--text-light);
+      border: 1px solid var(--border);
+    }
+
+    .check-text {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Instructional Snippets & Actions */
+    .info-box {
+      margin-top: 10px;
+      background: var(--surface-subtle);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      font-size: 13px;
+    }
+
+    .code-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 6px 12px;
+      margin-top: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12.5px;
+      color: var(--text-main);
+    }
+
+    .btn-copy {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .btn-copy:hover {
+      background: var(--surface-subtle);
+      color: var(--text-main);
+    }
+
+    /* Print & Actions Bar */
+    .footer-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-light);
+    }
+
+    .btn-print {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.15s;
+    }
+
+    .btn-print:hover {
+      background: var(--surface-subtle);
+      border-color: var(--border-focus);
+    }
+
+    @media print {
+      body {
+        padding: 0;
+        background: #ffffff;
+      }
+      .container {
+        max-width: 100%;
+      }
+      .header-card, .section-card, .progress-box {
+        box-shadow: none;
+        border-color: #cbd5e1;
+      }
+      .btn-print, .btn-copy {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header Card -->
+    <div class="header-card">
+      <div class="header-badge">Guia de Implantação · TM Sempre Tecnologia</div>
+      <h1>Próximos Passos Pós-Lançamento</h1>
+      <p class="subtitle">Checklist prático e objetivo de configurações, indexação e entrega oficial do site.</p>
+      
+      <div class="meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">Projeto:</span>
+          <span class="meta-value">Rancho Recanto dos Sonhos 63</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Domínio Oficial:</span>
+          <span class="meta-value"><a href="https://recantodossonhos63.com.br/" target="_blank" rel="noopener">recantodossonhos63.com.br</a></span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Hospedagem & DNS:</span>
+          <span class="meta-value">Vercel (São Paulo · Edge GRU1)</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Responsável Técnico:</span>
+          <span class="meta-value">TM Sempre Tecnologia</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Progress Indicator -->
+    <div class="progress-box">
+      <div class="progress-header">
+        <span>Progresso Geral do Checklist</span>
+        <span id="progress-text">5 de 10 tarefas concluídas (50%)</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="progress-fill" style="width: 50%;"></div>
+      </div>
+    </div>
+
+    <!-- SEÇÃO 1: INFRAESTRUTURA & DOMÍNIO -->
+    <div class="section-card">
+      <h2 class="section-title">
+        <span>1. Infraestrutura, Domínio & Redes Sociais</span>
+      </h2>
+      <p class="section-desc">Validação técnica de apontamento, segurança criptográfica e prévias de link.</p>
+
+      <div class="checklist-list">
+
+        <!-- Item 1 -->
+        <div class="check-item done">
+          <input type="checkbox" id="task-1" checked>
+          <div class="check-content">
+            <div class="check-header">
+              <label for="task-1" class="check-title">Registro do domínio & Nameservers Vercel</label>
+              <span class="badge badge-done">Concluído</span>
+            </div>
+            <p class="check-text">Domínio <code>recantodossonhos63.com.br</code> registrado no Registro.br e delegado com sucesso para <code>ns1.vercel-dns.com</code> e <code>ns2.vercel-dns.com</code>.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="check-item done">
+          <input type="checkbox" id="task-2" checked>
+          <div class="check-content">
+            <div class="check-header">
+              <label for="task-2" class="check-title">Certificado de Segurança SSL / HTTPS Ativo</label>
+              <span class="badge badge-done">Concluído</span>
+            </div>
+            <p class="check-text">Cadeado de segurança Let's Encrypt gerado pela Vercel. O site navega de forma 100% segura e criptografada via HTTPS.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="check-item done">
+          <input type="checkbox" id="task-3" checked>
+          <div class="check-content">
+            <div class="check-header">
+              <label for="task-3" class="check-title">Imagem de Compartilhamento (WhatsApp & Instagram)</label>
+              <span class="badge badge-done">Concluído</span>
+            </div>
+            <p class="check-text">Tags Open Graph e Twitter Cards atualizadas com domínio oficial, imagem de alta resolução e parâmetro anti-cache.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="check-item">
+          <input type="checkbox" id="task-4">
+          <div class="check-content">
+            <div class="check-header">
+              <label for="task-4" class="check-title">Redirecionamento opcional de WWW para o domínio limpo</label>
+              <span class="badge badge-optional">Opcional</span>
+            </div>
+            <p class="check-text">Garante que quem digitar <code>www.recantodossonhos63.com.br</code> caia direto em <code>recantodossonhos63.com.br</code>.</p>
+            <div class="info-box">
+              <strong>Como fazer:</strong> Acesse o painel da Vercel > <strong>Settings</strong> > <strong>Domains</strong> > Digite <code>www.recantodossonhos63.com.br</code> e clique em <strong>Add</strong> escolhendo a opção <em>Redirect to recantodossonhos63.com.br</em>.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SEÇÃO 2: INDEXAÇÃO & GOOGLE -->
+    <div class="section-card">
+      <h2 class="section-title">
+        <span>2. Google, SEO & Presença Local</span>
+      </h2>
+      <p class="section-desc">Passos para garantir que turistas e pescadores encontrem o site nas pesquisas do Google.</p>
+
+      <div class="checklist-list">
+
+        <!-- Item 5 -->
+        <div class="check-item done">
+          <input type="checkbox" id="task-5" checked>
+          <div class="check-content">
+            <div class="check-header">
+              <label for="task-5" class="check-title">Arquivos robots.txt e sitemap.xml publicados</label>
+              <span class="badge badge-done">Concluído</span>
+            </div>
+            <p class="check-text">Arquivos gerados e publicados na raiz do site para orientar a varredura dos robôs de busca.</p>
+            <div class="code-row">
+              <span>https://recantodossonhos63.com.br/sitemap.xml</span>
+              <button class="btn-copy" onclick="copyText('https://recantodossonhos63.com.br/sitemap.xml')">Copiar URL</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="check-item">
+          <input type="checkbox" id="task-6">
+          <div class="check-content">
+            <div class="check-header">
+              <label for="task-6" class="check-title">Cadastrar o site no Google Search Console</label>
+              <span class="badge badge-pending">Pendente</span>
+            </div>
+            <p class="check-text">O Search Console avisa o Google que o site existe para ele ser indexado e ranqueado nas buscas.</p>
+            <div class="info-box">
+              <strong>Passo a passo simples:</strong>
+              <ol style="margin-left: 20px; margin-top: 6px;">
+                <li>Acesse: <a href="https://search.google.com/search-console" target="_blank" rel="noopener">search.google.com/search-console</a></li>
+                <li>Clique em <strong>Adicionar Propriedade</strong> e selecione <strong>Prefixo do URL</strong> informando <code>https://recantodossonhos63.com.br/</code></li>
+                <li>No menu lateral esquerdo, clique em <strong>Sitemaps</strong>.</li>
+                <li>Cole <code>sitemap.xml</code> e clique em <strong>Enviar</strong>.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="check-item">
+          <input type="checkbox" id="task-7">
+          <div class="check-content">
+            <div class="check-header">
+              <label for="task-7" class="check-title">Inserir o site no Perfil do Google Meu Negócio (Google Maps)</label>
+              <span class="badge badge-pending">Pendente</span>
+            </div>
+            <p class="check-text">Adicione o link do site no perfil do Rancho no Google Maps em Peixe - TO para gerar visitas qualificadas de viajantes.</p>
+            <div class="code-row">
+              <span>Website: https://recantodossonhos63.com.br/</span>
+              <button class="btn-copy" onclick="copyText('https://recantodossonhos63.com.br/')">Copiar Link</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SEÇÃO 3: MÉTRICAS & ANÚNCIOS -->
+    <div class="section-card">
+      <h2 class="section-title">
+        <span>3. Análise de Acessos & Campanhas</span>
+      </h2>
+      <p class="section-desc">Monitoramento de quantas pessoas estão acessando o site e de onde elas vêm.</p>
+
+      <div class="checklist-list">
+
+        <!-- Item 8 -->
+        <div class="check-item done">
+          <input type="checkbox" id="task-8" checked>
+          <div class="check-content">
+            <div class="check-header">
+              <label for="task-8" class="check-title">Vercel Web Analytics & Speed Insights instalados</label>
+              <span class="badge badge-done">Concluído</span>
+            </div>
+            <p class="check-text">Scripts instalados no código-fonte. Contabiliza visitantes únicos, páginas mais vistas e velocidade de carregamento de forma nativa.</p>
+            <div class="info-box">
+              <strong>Como visualizar:</strong> Basta abrir o dashboard do seu projeto na Vercel e clicar na aba <strong>Analytics</strong>.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 9 -->
+        <div class="check-item">
+          <input type="checkbox" id="task-9">
+          <div class="check-content">
+            <div class="check-header">
+              <label for="task-9" class="check-title">Link na Bio do Instagram Oficial</label>
+              <span class="badge badge-pending">Pendente</span>
+            </div>
+            <p class="check-text">Substitua links genéricos ou agregadores no perfil do Instagram do Rancho pelo endereço oficial.</p>
+            <div class="code-row">
+              <span>https://recantodossonhos63.com.br/</span>
+              <button class="btn-copy" onclick="copyText('https://recantodossonhos63.com.br/')">Copiar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 10 -->
+        <div class="check-item">
+          <input type="checkbox" id="task-10">
+          <div class="check-content">
+            <div class="check-header">
+              <label for="task-10" class="check-title">Pixel da Meta (Facebook / Instagram Ads)</label>
+              <span class="badge badge-optional">Opcional</span>
+            </div>
+            <p class="check-text">Se for iniciar campanhas patrocinadas no Meta Ads para reservas, basta me fornecer o ID do Pixel que injeto no cabeçalho em 1 minuto.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer Bar -->
+    <div class="footer-actions">
+      <span>Documento gerado para controle interno · TM Sempre Tecnologia</span>
+      <button class="btn-print" onclick="window.print()">Imprimir / Salvar em PDF</button>
+    </div>
+
+  </div>
+
+  <!-- Interactivity Script -->
+  <script>
+    const STORAGE_KEY = 'rds63_checklist_state_v1';
+
+    function loadChecklistState() {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        try {
+          const state = JSON.parse(saved);
+          Object.keys(state).forEach(id => {
+            const input = document.getElementById(id);
+            if (input) {
+              input.checked = state[id];
+              updateItemVisual(input);
+            }
+          });
+        } catch (e) {
+          console.error(e);
+        }
+      }
+      updateProgress();
+    }
+
+    function saveChecklistState() {
+      const state = {};
+      document.querySelectorAll('.check-item input[type="checkbox"]').forEach(input => {
+        state[input.id] = input.checked;
+      });
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      updateProgress();
+    }
+
+    function updateItemVisual(input) {
+      const parent = input.closest('.check-item');
+      if (input.checked) {
+        parent.classList.add('done');
+      } else {
+        parent.classList.remove('done');
+      }
+    }
+
+    function updateProgress() {
+      const all = document.querySelectorAll('.check-item input[type="checkbox"]');
+      const checked = document.querySelectorAll('.check-item input[type="checkbox"]:checked');
+      const total = all.length;
+      const done = checked.length;
+      const percent = Math.round((done / total) * 100);
+
+      const fill = document.getElementById('progress-fill');
+      const text = document.getElementById('progress-text');
+
+      if (fill) fill.style.width = percent + '%';
+      if (text) text.textContent = `${done} de ${total} tarefas concluídas (${percent}%)`;
+    }
+
+    function copyText(val) {
+      navigator.clipboard.writeText(val).then(() => {
+        alert('Copiado: ' + val);
+      }).catch(() => {
+        prompt('Copie o valor abaixo:', val);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.check-item input[type="checkbox"]').forEach(input => {
+        input.addEventListener('change', () => {
+          updateItemVisual(input);
+          saveChecklistState();
+        });
+      });
+
+      loadChecklistState();
+    });
+  </script>
+</body>
+</html>
