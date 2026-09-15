@@ -350,20 +350,133 @@
       border-color: var(--border-focus);
     }
 
+    @page {
+      size: A4 portrait;
+      margin: 12mm 14mm 12mm 14mm;
+    }
+
     @media print {
+      *, *:before, *:after {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+      }
+
       body {
-        padding: 0;
-        background: #ffffff;
+        padding: 0 !important;
+        margin: 0 !important;
+        background: #ffffff !important;
+        font-size: 10.5pt !important;
+        line-height: 1.45 !important;
       }
+
       .container {
-        max-width: 100%;
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
       }
-      .header-card, .section-card, .progress-box {
-        box-shadow: none;
-        border-color: #cbd5e1;
+
+      /* Impede corte de cards no meio da página */
+      .header-card,
+      .progress-box,
+      .section-card,
+      .check-item,
+      .info-box,
+      .code-row,
+      .meta-grid,
+      .footer-actions {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
       }
-      .btn-print, .btn-copy {
-        display: none;
+
+      .section-card {
+        margin-bottom: 14px !important;
+        padding: 16px 18px !important;
+        border: 1px solid #cbd5e1 !important;
+        box-shadow: none !important;
+        background: #ffffff !important;
+      }
+
+      .header-card {
+        margin-bottom: 12px !important;
+        padding: 18px !important;
+        border: 1px solid #cbd5e1 !important;
+        box-shadow: none !important;
+      }
+
+      .progress-box {
+        margin-bottom: 12px !important;
+        padding: 10px 16px !important;
+        border: 1px solid #cbd5e1 !important;
+        box-shadow: none !important;
+      }
+
+      .check-item {
+        padding: 10px 12px !important;
+        margin-bottom: 8px !important;
+        border: 1px solid #e2e8f0 !important;
+        box-shadow: none !important;
+      }
+
+      .check-item.done {
+        background: #f0fdf4 !important;
+        border-color: #bbf7d0 !important;
+      }
+
+      .info-box {
+        padding: 8px 10px !important;
+        margin-top: 6px !important;
+        background: #f8fafc !important;
+        border: 1px solid #e2e8f0 !important;
+      }
+
+      .code-row {
+        padding: 4px 8px !important;
+        margin-top: 4px !important;
+        background: #ffffff !important;
+        border: 1px solid #e2e8f0 !important;
+      }
+
+      /* Oculta botões de tela na impressão */
+      .btn-print,
+      .btn-copy {
+        display: none !important;
+      }
+
+      /* Renderização garantida de checkboxes impressos */
+      .check-item input[type="checkbox"] {
+        appearance: none !important;
+        -webkit-appearance: none !important;
+        width: 16px !important;
+        height: 16px !important;
+        border: 1.5px solid #64748b !important;
+        border-radius: 3px !important;
+        display: inline-block !important;
+        position: relative !important;
+        vertical-align: middle !important;
+        background: #ffffff !important;
+      }
+
+      .check-item.done input[type="checkbox"] {
+        background-color: #15803d !important;
+        border-color: #15803d !important;
+      }
+
+      .check-item.done input[type="checkbox"]:after {
+        content: '✓' !important;
+        color: #ffffff !important;
+        font-size: 12px !important;
+        font-weight: bold !important;
+        position: absolute !important;
+        top: -2px !important;
+        left: 2px !important;
+      }
+
+      .footer-actions {
+        margin-top: 14px !important;
+        padding-top: 8px !important;
+        border-top: 1px solid #e2e8f0 !important;
       }
     }
   </style>
