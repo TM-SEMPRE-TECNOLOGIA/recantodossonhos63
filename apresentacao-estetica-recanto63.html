@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apresentação Visual & Direções Estéticas • Rancho Recanto dos Sonhos 63</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --bg-dark: #0A1118;
+      --surface-dark: #121E2A;
+      --surface-card: #182736;
+      --border-dark: rgba(255, 255, 255, 0.1);
+      --gold-accent: #E5B869;
+      --gold-light: #F7DCA3;
+      --text-main: #FFFFFF;
+      --text-muted: #94A3B8;
+      --text-dim: #64748B;
+    }
+
+    /* Temas para os Mockups Vivos */
+    .theme-eco-luxury {
+      --th-primary: #1B3B2B;
+      --th-primary-light: #2A543E;
+      --th-accent: #D4AF37;
+      --th-accent-hover: #BF9B27;
+      --th-secondary: #16384C;
+      --th-bg: #0E1A14;
+      --th-surface: #15271E;
+      --th-card: #1C3328;
+      --th-border: rgba(212, 175, 55, 0.25);
+      --th-text: #F9F7F2;
+      --th-text-muted: #A3B899;
+      --th-font-heading: 'Playfair Display', serif;
+      --th-font-body: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .theme-solar-adventure {
+      --th-primary: #D96526;
+      --th-primary-light: #F07A3B;
+      --th-accent: #0E8388;
+      --th-accent-hover: #09686C;
+      --th-secondary: #2E6F40;
+      --th-bg: #121316;
+      --th-surface: #1E1F24;
+      --th-card: #282A32;
+      --th-border: rgba(217, 101, 38, 0.3);
+      --th-text: #FAF7F2;
+      --th-text-muted: #CBD5E1;
+      --th-font-heading: 'Outfit', sans-serif;
+      --th-font-body: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .theme-minimalist-zen {
+      --th-primary: #5B6E58;
+      --th-primary-light: #71886D;
+      --th-accent: #B87D65;
+      --th-accent-hover: #9E654E;
+      --th-secondary: #252422;
+      --th-bg: #141312;
+      --th-surface: #1E1C1A;
+      --th-card: #272522;
+      --th-border: rgba(184, 125, 101, 0.25);
+      --th-text: #F5F2EB;
+      --th-text-muted: #A8A29E;
+      --th-font-heading: 'Cormorant Garamond', serif;
+      --th-font-body: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-main);
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top Navigation Header */
+    header.deck-header {
+      background: rgba(10, 17, 24, 0.95);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-dark);
+      padding: 14px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, #1B3B2B 0%, #D4AF37 100%);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFF;
+      font-size: 20px;
+      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.3);
+    }
+
+    .brand-text h1 {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+      color: #FFF;
+    }
+
+    .brand-text p {
+      font-size: 11px;
+      color: var(--gold-accent);
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .slide-navigation-pills {
+      display: flex;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 4px;
+      border-radius: 30px;
+      border: 1px solid var(--border-dark);
+    }
+
+    .nav-pill {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.25s ease;
+    }
+
+    .nav-pill:hover {
+      color: #FFF;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .nav-pill.active {
+      background: var(--gold-accent);
+      color: #0A1118;
+      box-shadow: 0 2px 10px rgba(229, 184, 105, 0.4);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .badge-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(229, 184, 105, 0.12);
+      border: 1px solid rgba(229, 184, 105, 0.3);
+      color: var(--gold-accent);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .badge-status .pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold-accent);
+      box-shadow: 0 0 8px var(--gold-accent);
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.4; }
+      50% { opacity: 1; }
+      100% { opacity: 0.4; }
+    }
+
+    /* Main Deck Container */
+    main.deck-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 32px 24px 60px;
+      position: relative;
+    }
+
+    .slide-view {
+      display: none;
+      width: 100%;
+      max-width: 1320px;
+      animation: fadeIn 0.35s ease;
+    }
+
+    .slide-view.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Hero Banner do Slide */
+    .slide-hero-box {
+      background: linear-gradient(135deg, rgba(18, 30, 42, 0.9) 0%, rgba(24, 39, 54, 0.95) 100%);
+      border: 1px solid var(--border-dark);
+      border-radius: 16px;
+      padding: 28px 36px;
+      margin-bottom: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+    }
+
+    .slide-hero-box::after {
+      content: '';
+      position: absolute;
+      right: -80px;
+      top: -80px;
+      width: 260px;
+      height: 260px;
+      background: radial-gradient(circle, rgba(229, 184, 105, 0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .slide-hero-content h2 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #FFF;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .slide-hero-content p {
+      font-size: 14px;
+      color: var(--text-muted);
+      max-width: 800px;
+      line-height: 1.6;
+    }
+
+    .slide-badge-counter {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--gold-accent);
+      background: rgba(229, 184, 105, 0.1);
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid rgba(229, 184, 105, 0.25);
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    /* Cards Estilizados */
+    .card-dark {
+      background: var(--surface-card);
+      border: 1px solid var(--border-dark);
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      transition: all 0.25s ease;
+    }
+
+    .card-dark:hover {
+      border-color: rgba(229, 184, 105, 0.35);
+      transform: translateY(-2px);
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #FFF;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 10px;
+    }
+
+    .card-title i {
+      color: var(--gold-accent);
+    }
+
+    /* Paleta Interativa */
+    .palette-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .palette-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .palette-item:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .palette-color-preview {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .color-chip {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .color-meta h4 {
+      font-size: 13px;
+      font-weight: 600;
+      color: #FFF;
+    }
+
+    .color-meta p {
+      font-size: 11px;
+      color: var(--text-dim);
+    }
+
+    .color-hex {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--gold-accent);
+      background: rgba(0, 0, 0, 0.3);
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+
+    /* Tipografia Showcase */
+    .type-sample {
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      margin-bottom: 14px;
+    }
+
+    .type-heading-preview {
+      font-size: 24px;
+      line-height: 1.25;
+      margin-bottom: 8px;
+      color: #FFF;
+    }
+
+    .type-body-preview {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+
+    /* Live Interactive Canvas Mockup */
+    .live-mockup-frame {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--th-border);
+      background: var(--th-bg);
+      color: var(--th-text);
+      font-family: var(--th-font-body);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+
+    .mockup-topbar {
+      background: var(--th-surface);
+      padding: 12px 20px;
+      border-bottom: 1px solid var(--th-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mockup-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .mockup-logo-mark {
+      height: 36px;
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mockup-logo-mark img {
+      height: 36px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .mockup-brand-name {
+      font-family: var(--th-font-heading);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: var(--th-text);
+    }
+
+    .mockup-nav-links {
+      display: flex;
+      gap: 16px;
+      font-size: 12px;
+      color: var(--th-text-muted);
+    }
+
+    .mockup-cta-btn {
+      background: var(--th-accent);
+      color: #000;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .mockup-hero-area {
+      padding: 38px 24px;
+      position: relative;
+      background: radial-gradient(circle at 80% 20%, var(--th-primary-light) 0%, var(--th-bg) 75%);
+    }
+
+    .mockup-pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--th-border);
+      color: var(--th-accent);
+      font-size: 11px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+
+    .mockup-hero-title {
+      font-family: var(--th-font-heading);
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 12px;
+      color: var(--th-text);
+      max-width: 580px;
+    }
+
+    .mockup-hero-title span.highlight {
+      color: var(--th-accent);
+    }
+
+    .mockup-hero-desc {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--th-text-muted);
+      max-width: 520px;
+      margin-bottom: 22px;
+    }
+
+    .mockup-action-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .mockup-primary-btn {
+      background: var(--th-accent);
+      color: #000;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    }
+
+    .mockup-secondary-btn {
+      background: transparent;
+      color: var(--th-text);
+      border: 1px solid var(--th-border);
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* Mini Grid de Recursos no Mockup */
+    .mockup-features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      padding: 20px;
+      background: var(--th-surface);
+      border-top: 1px solid var(--th-border);
+    }
+
+    .mockup-feat-card {
+      background: var(--th-card);
+      border: 1px solid var(--th-border);
+      border-radius: 8px;
+      padding: 12px;
+    }
+
+    .mockup-feat-card i {
+      color: var(--th-accent);
+      font-size: 16px;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .mockup-feat-card h5 {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--th-text);
+      margin-bottom: 4px;
+    }
+
+    .mockup-feat-card p {
+      font-size: 11px;
+      color: var(--th-text-muted);
+      line-height: 1.4;
+    }
+
+    /* Tabela Comparativa */
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .comparison-table th {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--gold-accent);
+      text-align: left;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border-dark);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .comparison-table td {
+      padding: 16px 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      color: var(--text-muted);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    .comparison-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+      color: #FFF;
+    }
+
+    .comparison-table td strong {
+      color: #FFF;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* Banner Informativo Layout Prévio */
+    .layout-dropzone-banner {
+      background: linear-gradient(135deg, rgba(229, 184, 105, 0.12) 0%, rgba(27, 59, 43, 0.3) 100%);
+      border: 2px dashed rgba(229, 184, 105, 0.4);
+      border-radius: 16px;
+      padding: 36px 30px;
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    .layout-dropzone-banner i {
+      font-size: 42px;
+      color: var(--gold-accent);
+      margin-bottom: 14px;
+      display: inline-block;
+    }
+
+    .layout-dropzone-banner h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #FFF;
+      margin-bottom: 8px;
+    }
+
+    .layout-dropzone-banner p {
+      font-size: 14px;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto 18px;
+      line-height: 1.6;
+    }
+
+    .layout-steps-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .layout-step-badge {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 12px;
+      color: #FFF;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .layout-step-badge span {
+      background: var(--gold-accent);
+      color: #000;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 11px;
+    }
+
+    /* Footer Controls */
+    footer.deck-footer {
+      background: rgba(10, 17, 24, 0.95);
+      border-top: 1px solid var(--border-dark);
+      padding: 14px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      bottom: 0;
+      z-index: 100;
+    }
+
+    .footer-left {
+      font-size: 12px;
+      color: var(--text-dim);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .footer-controls {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn-ctrl {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--border-dark);
+      color: #FFF;
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-ctrl:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-ctrl.btn-primary {
+      background: var(--gold-accent);
+      color: #0A1118;
+      border-color: var(--gold-accent);
+    }
+
+    .btn-ctrl.btn-primary:hover {
+      background: #F0C97F;
+    }
+
+    /* Live Switcher Bar inside Slide 5 (Lab) */
+    .lab-theme-switcher {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 8px;
+      border-radius: 12px;
+      border: 1px solid var(--border-dark);
+      justify-content: center;
+    }
+
+    .lab-btn {
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .lab-btn.active {
+      background: rgba(255, 255, 255, 0.1);
+      color: #FFF;
+      border-color: var(--gold-accent);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header Navigation -->
+  <header class="deck-header">
+    <div class="header-brand">
+      <div class="brand-icon">
+        <i class="fa-solid fa-compass"></i>
+      </div>
+      <div class="brand-text">
+        <h1>Rancho Recanto dos Sonhos 63</h1>
+        <p>Apresentação de Direções Estéticas & Identidade • Peixe - TO</p>
+      </div>
+    </div>
+
+    <nav class="slide-navigation-pills">
+      <button class="nav-pill active" onclick="goToSlide(0)"><i class="fa-solid fa-chart-pie"></i> 1. Diagnóstico</button>
+      <button class="nav-pill" onclick="goToSlide(1)"><i class="fa-solid fa-gem"></i> 2. Eco-Luxury</button>
+      <button class="nav-pill" onclick="goToSlide(2)"><i class="fa-solid fa-sun"></i> 3. Solar & Aventura</button>
+      <button class="nav-pill" onclick="goToSlide(3)"><i class="fa-solid fa-feather"></i> 4. Minimalista Zen</button>
+      <button class="nav-pill" onclick="goToSlide(4)"><i class="fa-solid fa-flask-vial"></i> 5. Comparativo & Lab</button>
+      <button class="nav-pill" onclick="goToSlide(5)"><i class="fa-solid fa-layer-group"></i> 6. Modelo de Layout</button>
+    </nav>
+
+    <div class="header-actions">
+      <div class="badge-status">
+        <span class="pulse-dot"></span>
+        TM FRAMEWORK 1.0
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Deck Content -->
+  <main class="deck-container">
+
+    <!-- ================= SLIDE 1: DIAGNÓSTICO & DOSSIÊ ================= -->
+    <section class="slide-view active" id="slide-0">
+      <div class="slide-hero-box">
+        <div class="slide-hero-content">
+          <h2><i class="fa-solid fa-magnifying-glass-chart" style="color: var(--gold-accent);"></i> Raio-X do Dossiê & Oportunidade Comercial</h2>
+          <p>Análise dos dados reais do perfil <strong>@recanto_dos_sonhos63</strong> e requisitos de posicionamento para Peixe, Tocantins. Como transformar o encanto dos vídeos do Araguaia em uma máquina de reservas diretas no WhatsApp.</p>
+        </div>
+        <div class="slide-badge-counter">SLIDE 01 / 06</div>
+      </div>
+
+      <div class="grid-3">
+        <div class="card-dark">
+          <div class="card-title"><i class="fa-solid fa-bullseye"></i> Slogan & Manifesto Oficial</div>
+          <p style="font-size: 13px; color: var(--gold-accent); line-height: 1.6; margin-bottom: 12px; font-weight: 700;">
+            "VERÃO É SINÔNIMO DE RANCHO. E RANCHO É SINÔNIMO DE FELICIDADE."
+          </p>
+          <p style="font-size: 12px; color: var(--text-dim); line-height: 1.5;">
+            <strong>Travessia para a praia inclusa (ida e volta)</strong>, tenda privativa na areia com churrasqueira e piscina pré-aquecida no rancho.
+          </p>
+        </div>
+
+        <div class="card-dark">
+          <div class="card-title"><i class="fa-solid fa-triangle-exclamation"></i> Gaps do Instagram Atual</div>
+          <ul style="list-style: none; font-size: 12px; color: var(--text-muted); line-height: 1.8;">
+            <li><i class="fa-solid fa-xmark" style="color: #EF4444; margin-right: 6px;"></i> Perguntas constantes de <em>"quanto é a diária"</em> sem resposta pública imediata.</li>
+            <li><i class="fa-solid fa-xmark" style="color: #EF4444; margin-right: 6px;"></i> Destaques com nomes genéricos (7 destaques chamados "Destaques").</li>
+            <li><i class="fa-solid fa-xmark" style="color: #EF4444; margin-right: 6px;"></i> Falta de clareza sobre capacidade de hóspedes, quartos e acesso.</li>
+          </ul>
+        </div>
+
+        <div class="card-dark">
+          <div class="card-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Solução no Novo Site</div>
+          <ul style="list-style: none; font-size: 12px; color: var(--text-muted); line-height: 1.8;">
+            <li><i class="fa-solid fa-check" style="color: #10B981; margin-right: 6px;"></i> <strong>Transparência comercial:</strong> Faixas de valor, capacidade e comodidades.</li>
+            <li><i class="fa-solid fa-check" style="color: #10B981; margin-right: 6px;"></i> <strong>Filtro de datas e WhatsApp inteligente</strong> com mensagem pré-formatada.</li>
+            <li><i class="fa-solid fa-check" style="color: #10B981; margin-right: 6px;"></i> <strong>SEO Local & GEO:</strong> Posicionamento para Peixe-TO e temporada Araguaia.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card-dark" style="background: linear-gradient(135deg, rgba(24, 39, 54, 0.8) 0%, rgba(18, 30, 42, 0.9) 100%);">
+        <div class="card-title"><i class="fa-solid fa-users"></i> Público-Alvo Prioritário (ICP)</div>
+        <div class="grid-3" style="margin-bottom: 0;">
+          <div style="padding: 12px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+            <h5 style="color: #FFF; font-size: 13px; margin-bottom: 4px;"><i class="fa-solid fa-house-chimney-window" style="color: var(--gold-accent);"></i> Famílias em Férias & Fim de Semana</h5>
+            <p style="font-size: 11px; color: var(--text-muted);">Buscam segurança para crianças, praia de rio tranquila, cozinha completa e quartos climatizados.</p>
+          </div>
+          <div style="padding: 12px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+            <h5 style="color: #FFF; font-size: 13px; margin-bottom: 4px;"><i class="fa-solid fa-fish" style="color: var(--gold-accent);"></i> Grupos de Pesca Esportiva</h5>
+            <p style="font-size: 11px; color: var(--text-muted);">Foco no Rio Araguaia, pontos de pesca, apoio para barcos, freezer para peixes e área de confraternização.</p>
+          </div>
+          <div style="padding: 12px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+            <h5 style="color: #FFF; font-size: 13px; margin-bottom: 4px;"><i class="fa-solid fa-champagne-glasses" style="color: var(--gold-accent);"></i> Grupos de Amigos & Temporada 2026</h5>
+            <p style="font-size: 11px; color: var(--text-muted);">Temporada de praia de julho/agosto, churrasco, som moderado, banho de sol e celebração privativa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SLIDE 2: OPÇÃO 1 - ECO-LUXURY ================= -->
+    <section class="slide-view" id="slide-1">
+      <div class="slide-hero-box" style="border-color: rgba(212, 175, 55, 0.4);">
+        <div class="slide-hero-content">
+          <h2><i class="fa-solid fa-leaf" style="color: #D4AF37;"></i> Opção 1: Rústico Sofisticado & Eco-Luxury</h2>
+          <p>Inspirada nos eco-resorts e lodges de luxo do Pantanal e Amazônia: combina <strong>Verde Cerrado Profundo</strong>, <strong>Areia Dourada do Araguaia</strong> e <strong>Azul Ribeirinho</strong> com tipografia serifada de alta hospitalidade.</p>
+        </div>
+        <div class="slide-badge-counter" style="color: #D4AF37; border-color: rgba(212,175,55,0.4);">RECOMENDADA</div>
+      </div>
+
+      <div class="grid-2">
+        <!-- Coluna Esquerda: Paleta e Fontes -->
+        <div>
+          <div class="card-dark" style="margin-bottom: 24px;">
+            <div class="card-title"><i class="fa-solid fa-palette"></i> Paleta Oficial • Eco-Luxury Araguaia</div>
+            <div class="palette-grid">
+              <div class="palette-item">
+                <div class="palette-color-preview">
+                  <div class="color-chip" style="background: #1B3B2B;"></div>
+                  <div class="color-meta">
+                    <h4>Verde Cerrado Nobre</h4>
+                    <p>Primária • Fundo nobre e autoridade da mata nativa</p>
+                  </div>
+                </div>
+                <span class="color-hex">#1B3B2B</span>
+              </div>
+              <div class="palette-item">
+                <div class="palette-color-preview">
+                  <div class="color-chip" style="background: #D4AF37;"></div>
+                  <div class="color-meta">
+                    <h4>Areia Dourada do Araguaia</h4>
+                    <p>Acento • CTAs de WhatsApp, selos e destaques solares</p>
+                  </div>
+                </div>
+                <span class="color-hex">#D4AF37</span>
+              </div>
+              <div class="palette-item">
+                <div class="palette-color-preview">
+                  <div class="color-chip" style="background: #16384C;"></div>
+                  <div class="color-meta">
+                    <h4>Azul Ribeirinho Profundo</h4>
+                    <p>Secundária • Águas profundas do Rio Araguaia</p>
+                  </div>
+                </div>
+                <span class="color-hex">#16384C</span>
+              </div>
+              <div class="palette-item">
+                <div class="palette-color-preview">
+                  <div class="color-chip" style="background: #F9F7F2; border: 1px solid #CCC;"></div>
+                  <div class="color-meta">
+                    <h4>Linho Natural & Conchas</h4>
+                    <p>Superfície Clara • Leveza, frescor e alta legibilidade</p>
+                  </div>
+                </div>
+                <span class="color-hex">#F9F7F2</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-dark">
+            <div class="card-title"><i class="fa-solid fa-font"></i> Tipografia: Playfair Display + Plus Jakarta Sans</div>
+            <div class="type-sample">
+              <div class="type-heading-preview" style="font-family: 'Playfair Display', serif;">
+                Momentos inesquecíveis à beira do Araguaia.
+              </div>
+              <div class="type-body-preview" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                O equilíbrio perfeito entre o aconchego rústico de um rancho privativo e o conforto moderno que sua família merece em Peixe-TO.
+              </div>
+            </div>
+            <div style="font-size: 11px; color: var(--gold-accent); font-family: 'JetBrains Mono';">
+              EMOÇÃO: Elegância atemporal, hotelaria de charme, tranquilidade e refúgio nobre.
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna Direita: Live Mockup Interativo -->
+        <div>
+          <div class="card-title" style="margin-bottom: 12px;"><i class="fa-solid fa-eye"></i> Simulação Visual da Interface (Hero & Cards)</div>
+          <div class="live-mockup-frame theme-eco-luxury">
+            <div class="mockup-topbar">
+              <div class="mockup-brand">
+                <div class="mockup-logo-mark"><img src="./logo-recanto-cropped.png" alt="Logo Recanto dos Sonhos"></div>
+                <span class="mockup-brand-name">RECANTO DOS SONHOS 63</span>
+              </div>
+              <div class="mockup-nav-links">
+                <span>Rancho</span>
+                <span>Pesca</span>
+                <span>Estrutura</span>
+                <span>Localização</span>
+              </div>
+              <button class="mockup-cta-btn"><i class="fa-brands fa-whatsapp"></i> Reservar</button>
+            </div>
+
+            <div class="mockup-hero-area">
+              <div class="mockup-pill-badge">
+                <i class="fa-solid fa-star"></i> Temporada & Lazer em Peixe • Tocantins
+              </div>
+              <h3 class="mockup-hero-title">
+                Seu rancho exclusivo para descansar, pescar e <span class="highlight">viver o Araguaia</span>.
+              </h3>
+              <p class="mockup-hero-desc">
+                Pé na areia, água cristalina e estrutura completa para reunir amigos e familiares com privacidade total durante o ano todo.
+              </p>
+              <div class="mockup-action-row">
+                <button class="mockup-primary-btn"><i class="fa-brands fa-whatsapp"></i> Consultar Disponibilidade</button>
+                <button class="mockup-secondary-btn"><i class="fa-solid fa-camera"></i> Ver Fotos do Rancho</button>
+              </div>
+            </div>
+
+            <div class="mockup-features-grid">
+              <div class="mockup-feat-card">
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <h5>Praia Fluvial Privativa</h5>
+                <p>Acesso direto à praia de rio do Araguaia com águas mornas e calmas.</p>
+              </div>
+              <div class="mockup-feat-card">
+                <i class="fa-solid fa-fish"></i>
+                <h5>Ponto Nobre de Pesca</h5>
+                <p>Região rica em peixes nativos com suporte para embarcações.</p>
+              </div>
+              <div class="mockup-feat-card">
+                <i class="fa-solid fa-snowflake"></i>
+                <h5>Conforto Climatizado</h5>
+                <p>Suítes equipadas, cozinha completa e quiosque com churrasqueira.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SLIDE 3: OPÇÃO 2 - SOLAR & AVENTURA ================= -->
+    <section class="slide-view" id="slide-2">
+      <div class="slide-hero-box" style="border-color: rgba(217, 101, 38, 0.4);">
+        <div class="slide-hero-content">
+          <h2><i class="fa-solid fa-fire" style="color: #D96526;"></i> Opção 2: Solar, Praia Fluvial & Aventura</h2>
+          <p>Inspirada na energia contagiante da temporada de praias do Tocantins: tons vibrantes de <strong>Pôr do Sol Terracota</strong>, <strong>Turquesa do Araguaia</strong> e <strong>Verde Palmeira</strong> com tipografia moderna e esportiva.</p>
+        </div>
+        <div class="slide-badge-counter" style="color: #D96526; border-color: rgba(217,101,38,0.4);">ALTA ENERGIA</div>
+      </div>
+
+      <div class="grid-2">
+        <!-- Coluna Esquerda -->
+        <div>
+          <div class="card-dark" style="margin-bottom: 24px;">
+            <div class="card-title"><i class="fa-solid fa-palette"></i> Paleta Oficial • Solar & Aventura</div>
+            <div class="palette-grid">
+              <div class="palette-item">
+                <div class="palette-color-preview">
+                  <div class="color-chip" style="background: #D96526;"></div>
+                  <div class="color-meta">
+                    <h4>Terracota Pôr do Sol</h4>
+                    <p>Primária • Calor do Tocantins, energia de férias e praia</p>
+                  </div>
+                </div>
+                <span class="color-hex">#D96526</span>
+              </div>
+              <div class="palette-item">
+                <div class="palette-color-preview">
+                  <div class="color-chip" style="background: #0E8388;"></div>
+                  <div class="color-meta">
+                    <h4>Turquesa Água Doce</h4>
+                    <p>Acento • Refrescância do banho de rio e aventura aquática</p>
+                  </div>
+                </div>
+                <span class="color-hex">#0E8388</span>
+              </div>
+              <div class="palette-item">
+                <div class="palette-color-preview">
+                  <div class="color-chip" style="background: #2E6F40;"></div>
+                  <div class="color-meta">
+                    <h4>Verde Palmeira Ribeirinha</h4>
+                    <p>Secundária • Natureza exuberante das margens do rio</p>
+                  </div>
+                </div>
+                <span class="color-hex">#2E6F40</span>
+              </div>
+              <div class="palette-item">
+                <div class="palette-color-preview">
+                  <div class="color-chip" style="background: #FAF7F2; border: 1px solid #CCC;"></div>
+                  <div class="color-meta">
+                    <h4>Areia Branca Refletiva</h4>
+                    <p>Superfície Clara • Bancos de areia branca da estiagem</p>
+                  </div>
+                </div>
+                <span class="color-hex">#FAF7F2</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-dark">
+            <div class="card-title"><i class="fa-solid fa-font"></i> Tipografia: Outfit + Plus Jakarta Sans</div>
+            <div class="type-sample">
+              <div class="type-heading-preview" style="font-family: 'Outfit', sans-serif; font-weight: 800;">
+                O melhor do verão e da pesca no Araguaia.
+              </div>
+              <div class="type-body-preview" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                Sol, praia de água doce cristalina, churrasco com a galera e as melhores pescarias da região de Peixe-TO em um só lugar.
+              </div>
+            </div>
+            <div style="font-size: 11px; color: #D96526; font-family: 'JetBrains Mono';">
+              EMOÇÃO: Calor, celebração, dinamismo jovem, dias ensolarados e aventura esportiva.
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna Direita -->
+        <div>
+          <div class="card-title" style="margin-bottom: 12px;"><i class="fa-solid fa-eye"></i> Simulação Visual da Interface (Hero & Cards)</div>
+          <div class="live-mockup-frame theme-solar-adventure">
+            <div class="mockup-topbar">
+              <div class="mockup-brand">
+                <div class="mockup-logo-mark"><img src="./logo-recanto-cropped.png" alt="Logo"></div>
+                <span class="mockup-brand-name">RECANTO DOS SONHOS 63</span>
+              </div>
+              <div class="mockup-nav-links">
+                <span>A Praia</span>
+                <span>Pescaria</span>
+                <span>Rancho</span>
+                <span>Como Chegar</span>
+              </div>
+              <button class="mockup-cta-btn" style="background: #0E8388; color: #FFF;"><i class="fa-brands fa-whatsapp"></i> Chamar no Zap</button>
+            </div>
+
+            <div class="mockup-hero-area" style="background: radial-gradient(circle at 80% 20%, #75310D 0%, #121316 75%);">
+              <div class="mockup-pill-badge" style="border-color: rgba(217,101,38,0.5); color: #F07A3B;">
+                <i class="fa-solid fa-bolt"></i> Temporada Oficial Peixe • Rancho Aberto o Ano Todo
+              </div>
+              <h3 class="mockup-hero-title">
+                Viva dias épicos de <span class="highlight" style="color: #F07A3B;">sol, praia e pesca</span> no Tocantins.
+              </h3>
+              <p class="mockup-hero-desc">
+                Reúna os amigos e a família para curtir o calor do Araguaia com privacidade, barco, churrasqueira e conforto total.
+              </p>
+              <div class="mockup-action-row">
+                <button class="mockup-primary-btn" style="background: #D96526; color: #FFF;"><i class="fa-brands fa-whatsapp"></i> Garantir Minha Data</button>
+                <button class="mockup-secondary-btn"><i class="fa-solid fa-location-dot"></i> Como Chegar</button>
+              </div>
+            </div>
+
+            <div class="mockup-features-grid">
+              <div class="mockup-feat-card">
+                <i class="fa-solid fa-sailboat" style="color: #0E8388;"></i>
+                <h5>Descida de Barcos</h5>
+                <p>Acesso facilitado à água para lanchas, canoas e pescadores.</p>
+              </div>
+              <div class="mockup-feat-card">
+                <i class="fa-solid fa-drumstick-bite" style="color: #D96526;"></i>
+                <h5>Área Gourmet Completa</h5>
+                <p>Churrasqueira com vista para o rio, freezer horizontal e bancada.</p>
+              </div>
+              <div class="mockup-feat-card">
+                <i class="fa-solid fa-sun" style="color: #F07A3B;"></i>
+                <h5>Pôr do Sol Mágico</h5>
+                <p>O espetáculo do entardecer tocantinense direto da varanda.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SLIDE 4: OPÇÃO 3 - MINIMALISTA ZEN ================= -->
+    <section class="slide-view" id="slide-3">
+      <div class="slide-hero-box" style="border-color: rgba(184, 125, 101, 0.4);">
+        <div class="slide-hero-content">
+          <h2><i class="fa-solid fa-spa" style="color: #B87D65;"></i> Opção 3: Minimalista Contemporâneo & Refúgio Zen</h2>
+          <p>Foco na serenidade e no silêncio da natureza: tons suaves de <strong>Verde Sálvia</strong>, <strong>Argila Queimada</strong> e <strong>Areia Escura</strong> com tipografia editorial refinada.</p>
+        </div>
+        <div class="slide-badge-counter" style="color: #B87D65; border-color: rgba(184,125,101,0.4);">REFÚGIO & PAZ</div>
+      </div>
+
+      <div class="grid-2">
+        <!-- Coluna Esquerda -->
+        <div>
+          <div class="card-dark" style="margin-bottom: 24px;">
+            <div class="card-title"><i class="fa-solid fa-palette"></i> Paleta Oficial • Minimalista Zen</div>
+            <div class="palette-grid">
+              <div class="palette-item">
+                <div class="palette-color-preview">
+                  <div class="color-chip" style="background: #5B6E58;"></div>
+                  <div class="color-meta">
+                    <h4>Verde Sálvia Suave</h4>
+                    <p>Primária • Serenidade, equilíbrio botânico e contemplação</p>
+                  </div>
+                </div>
+                <span class="color-hex">#5B6E58</span>
+              </div>
+              <div class="palette-item">
+                <div class="palette-color-preview">
+                  <div class="color-chip" style="background: #B87D65;"></div>
+                  <div class="color-meta">
+                    <h4>Argila Terracota Fosca</h4>
+                    <p>Acento • Toque acolhedor de cerâmica e terra firme</p>
+                  </div>
+                </div>
+                <span class="color-hex">#B87D65</span>
+              </div>
+              <div class="palette-item">
+                <div class="palette-color-preview">
+                  <div class="color-chip" style="background: #252422;"></div>
+                  <div class="color-meta">
+                    <h4>Carvão Nobre Profundo</h4>
+                    <p>Secundária • Contraste elegante e sofisticado</p>
+                  </div>
+                </div>
+                <span class="color-hex">#252422</span>
+              </div>
+              <div class="palette-item">
+                <div class="palette-color-preview">
+                  <div class="color-chip" style="background: #F5F2EB; border: 1px solid #CCC;"></div>
+                  <div class="color-meta">
+                    <h4>Algodão Cru & Marfim</h4>
+                    <p>Superfície Clara • Pureza orgânica e conforto visual</p>
+                  </div>
+                </div>
+                <span class="color-hex">#F5F2EB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-dark">
+            <div class="card-title"><i class="fa-solid fa-font"></i> Tipografia: Cormorant Garamond + Plus Jakarta Sans</div>
+            <div class="type-sample">
+              <div class="type-heading-preview" style="font-family: 'Cormorant Garamond', serif; font-size: 26px;">
+                Desconecte do mundo. Reconecte-se com o essencial.
+              </div>
+              <div class="type-body-preview" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                O som da correnteza do rio, noites estreladas e o aconchego de uma estrutura pensada para desacelerar o ritmo.
+              </div>
+            </div>
+            <div style="font-size: 11px; color: #B87D65; font-family: 'JetBrains Mono';">
+              EMOÇÃO: Desconexão digital, exclusividade silenciosa, descanso profundo e bem-estar.
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna Direita -->
+        <div>
+          <div class="card-title" style="margin-bottom: 12px;"><i class="fa-solid fa-eye"></i> Simulação Visual da Interface (Hero & Cards)</div>
+          <div class="live-mockup-frame theme-minimalist-zen">
+            <div class="mockup-topbar">
+              <div class="mockup-brand">
+                <div class="mockup-logo-mark"><img src="./logo-recanto-cropped.png" alt="Logo"></div>
+                <span class="mockup-brand-name" style="letter-spacing: 2px;">RECANTO DOS SONHOS</span>
+              </div>
+              <div class="mockup-nav-links">
+                <span>O Refúgio</span>
+                <span>O Rio</span>
+                <span>Acomodações</span>
+                <span>Contato</span>
+              </div>
+              <button class="mockup-cta-btn" style="background: #B87D65; color: #FFF;"><i class="fa-solid fa-calendar-check"></i> Reservar</button>
+            </div>
+
+            <div class="mockup-hero-area" style="background: radial-gradient(circle at 80% 20%, #374235 0%, #141312 75%);">
+              <div class="mockup-pill-badge" style="border-color: rgba(184,125,101,0.3); color: #B87D65;">
+                <i class="fa-solid fa-tree"></i> Refúgio Privativo • Peixe - Tocantins
+              </div>
+              <h3 class="mockup-hero-title">
+                Um santuário natural às margens do <span class="highlight" style="color: #B87D65;">Araguaia</span>.
+              </h3>
+              <p class="mockup-hero-desc">
+                Estrutura aconchegante desenhada para proporcionar dias de profunda serenidade, banho de rio privativo e convivência com quem você ama.
+              </p>
+              <div class="mockup-action-row">
+                <button class="mockup-primary-btn" style="background: #B87D65; color: #FFF;"><i class="fa-brands fa-whatsapp"></i> Solicitar Reserva</button>
+                <button class="mockup-secondary-btn"><i class="fa-solid fa-compass"></i> Conheça os Ambientes</button>
+              </div>
+            </div>
+
+            <div class="mockup-features-grid">
+              <div class="mockup-feat-card">
+                <i class="fa-solid fa-wind" style="color: #5B6E58;"></i>
+                <h5>Silêncio & Natureza</h5>
+                <p>Privacidade e afastamento de barulhos urbanos para descanso real.</p>
+              </div>
+              <div class="mockup-feat-card">
+                <i class="fa-solid fa-water" style="color: #B87D65;"></i>
+                <h5>Águas Calmas</h5>
+                <p>Margem segura para banho relaxante em qualquer hora do dia.</p>
+              </div>
+              <div class="mockup-feat-card">
+                <i class="fa-solid fa-moon" style="color: #71886D;"></i>
+                <h5>Céu Estrelado</h5>
+                <p>Varanda espaçosa para admirar a via láctea à noite no Tocantins.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SLIDE 5: COMPARATIVO & LAB INTERATIVO ================= -->
+    <section class="slide-view" id="slide-4">
+      <div class="slide-hero-box">
+        <div class="slide-hero-content">
+          <h2><i class="fa-solid fa-scale-balanced" style="color: var(--gold-accent);"></i> Matriz Comparativa & Teste em Tempo Real</h2>
+          <p>Compare os diferenciais de cada direção e use o seletor abaixo para testar instantaneamente a atmosfera visual dos cards de conversão.</p>
+        </div>
+        <div class="slide-badge-counter">ANÁLISE ESTRATÉGICA</div>
+      </div>
+
+      <div class="card-dark" style="margin-bottom: 24px; padding: 0; overflow: hidden;">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Critério de Decisão</th>
+              <th>1. Rústico Eco-Luxury (Recomendada)</th>
+              <th>2. Solar & Aventura</th>
+              <th>3. Minimalista Zen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Público Ideal</strong></td>
+              <td>Famílias exigentes, turistas de temporada e grupos que valorizam conforto premium.</td>
+              <td>Grupos de pescadores, turma de amigos, jovens e apaixonados pela alta temporada.</td>
+              <td>Casais, pequenas famílias e hóspedes em busca de silêncio e descompressão total.</td>
+            </tr>
+            <tr>
+              <td><strong>Percepção de Valor</strong></td>
+              <td><strong>Mais Alta:</strong> Permite cobrar diárias mais elevadas pela estética de eco-resort.</td>
+              <td><strong>Alta Conversão:</strong> Estimula a pressa e a vontade de curtir a praia e a pesca.</td>
+              <td><strong>Diferenciada:</strong> Atrai um público seleto que foge do agito tradicional.</td>
+            </tr>
+            <tr>
+              <td><strong>Destaque no Instagram</strong></td>
+              <td>Harmoniza perfeitamente com fotos da natureza preservada e pôr do sol dourado.</td>
+              <td>Combina com vídeos cheios de gente, barcos navegando, peixes grandes e cerveja gelada.</td>
+              <td>Combina com fotos artísticas de arquitetura, café da manhã na varanda e águas calmas.</td>
+            </tr>
+            <tr>
+              <td><strong>Chamada de Ação (CTA)</strong></td>
+              <td><em>"Consultar disponibilidade para minha família"</em></td>
+              <td><em>"Garantir meu fim de semana de pesca e praia"</em></td>
+              <td><em>"Reservar meu refúgio no Araguaia"</em></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Live Switcher Lab -->
+      <div class="card-dark">
+        <div class="card-title" style="justify-content: center; border: none; padding-bottom: 0;">
+          <i class="fa-solid fa-sliders"></i> Laboratório Interativo: Alterne o Tema ao Vivo nos Componentes
+        </div>
+        
+        <div class="lab-theme-switcher">
+          <button class="lab-btn active" onclick="setLabTheme('theme-eco-luxury', this)">
+            <i class="fa-solid fa-leaf" style="color: #D4AF37;"></i> 1. Eco-Luxury (Ouro & Verde)
+          </button>
+          <button class="lab-btn" onclick="setLabTheme('theme-solar-adventure', this)">
+            <i class="fa-solid fa-fire" style="color: #D96526;"></i> 2. Solar Aventura (Terracota & Turquesa)
+          </button>
+          <button class="lab-btn" onclick="setLabTheme('theme-minimalist-zen', this)">
+            <i class="fa-solid fa-spa" style="color: #B87D65;"></i> 3. Minimalista Zen (Sálvia & Argila)
+          </button>
+        </div>
+
+        <!-- Container do Lab Reativo -->
+        <div id="interactive-lab-container" class="live-mockup-frame theme-eco-luxury" style="padding: 24px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <div>
+              <span class="mockup-pill-badge"><i class="fa-solid fa-calendar"></i> Simulação de Reserva</span>
+              <h4 style="font-family: var(--th-font-heading); font-size: 22px; color: var(--th-text);">Rancho Completo • Temporada Peixe-TO</h4>
+            </div>
+            <div style="text-align: right;">
+              <span style="font-size: 11px; color: var(--th-text-muted); display: block;">Diária a partir de</span>
+              <strong style="font-size: 20px; color: var(--th-accent); font-family: 'JetBrains Mono';">Consulte Pacotes</strong>
+            </div>
+          </div>
+
+          <div class="grid-3" style="margin-bottom: 20px;">
+            <div class="mockup-feat-card">
+              <i class="fa-solid fa-bed"></i>
+              <h5>Acomodações Climatizadas</h5>
+              <p>Quartos arejados, camas confortáveis e banheiros limpos prontos para sua chegada.</p>
+            </div>
+            <div class="mockup-feat-card">
+              <i class="fa-solid fa-kitchen-set"></i>
+              <h5>Cozinha & Quiosque</h5>
+              <p>Geladeira, freezer para bebidas e pescado, fogão e utensílios completos.</p>
+            </div>
+            <div class="mockup-feat-card">
+              <i class="fa-solid fa-shield-halved"></i>
+              <h5>Privacidade & Segurança</h5>
+              <p>Rancho reservado apenas para você e seu grupo de convidados, sem estranhos.</p>
+            </div>
+          </div>
+
+          <div style="background: var(--th-surface); border: 1px solid var(--th-border); border-radius: 10px; padding: 18px; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <h5 style="color: var(--th-text); font-size: 14px; margin-bottom: 4px;">Deseja verificar datas livres e valores para o seu grupo?</h5>
+              <p style="color: var(--th-text-muted); font-size: 12px;">Nosso atendimento no WhatsApp responde em poucos minutos com fotos e detalhes.</p>
+            </div>
+            <button class="mockup-primary-btn" style="white-space: nowrap;"><i class="fa-brands fa-whatsapp"></i> Falar com o Responsável</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SLIDE 6: MODELO DE LAYOUT DO USUÁRIO ================= -->
+    <section class="slide-view" id="slide-5">
+      <div class="slide-hero-box" style="border-color: rgba(229, 184, 105, 0.4);">
+        <div class="slide-hero-content">
+          <h2><i class="fa-solid fa-compass-drafting" style="color: var(--gold-accent);"></i> Integração com o Modelo de Layout que Você Vai Trazer</h2>
+          <p>Como você mencionou que trará um modelo de layout de referência, preparamos a esteira técnica para absorver perfeitamente sua estrutura visual.</p>
+        </div>
+        <div class="slide-badge-counter">PRÓXIMO PASSO</div>
+      </div>
+
+      <div class="layout-dropzone-banner">
+        <i class="fa-solid fa-file-code"></i>
+        <h3>Aguardando o Seu Modelo de Layout de Referência</h3>
+        <p>
+          Assim que você nos enviar o link, print, arquivo HTML ou template de referência (Envato, Awwwards, benchmark de outro projeto ou código existente), nós iremos mapear cada bloco e fundir a estrutura do modelo escolhido com a identidade visual e os requisitos do Rancho Recanto dos Sonhos 63!
+        </p>
+
+        <div class="layout-steps-row">
+          <div class="layout-step-badge">
+            <span>1</span> Você escolhe a Direção Estética (Opção 1, 2 ou 3)
+          </div>
+          <div class="layout-step-badge">
+            <span>2</span> Você cola aqui o Modelo de Layout / Referência
+          </div>
+          <div class="layout-step-badge">
+            <span>3</span> Disparamos a Skill 2 (Scaffolder + Design System)
+          </div>
+          <div class="layout-step-badge">
+            <span>4</span> Polimento Anti-Bare com a Skill 3 (Niche Craftsman)
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-top: 24px;">
+        <div class="card-dark">
+          <div class="card-title"><i class="fa-solid fa-list-check"></i> Seções Estruturais Prontas no Dossiê</div>
+          <ul style="list-style: none; font-size: 12px; color: var(--text-muted); line-height: 2;">
+            <li><i class="fa-solid fa-circle-check" style="color: var(--gold-accent); margin-right: 8px;"></i> <strong>01. Navbar Editorial:</strong> Logo, âncoras rápidas e botão WhatsApp Direct.</li>
+            <li><i class="fa-solid fa-circle-check" style="color: var(--gold-accent); margin-right: 8px;"></i> <strong>02. Hero de Alto Impacto:</strong> Foto autêntica do Araguaia + Headline persuasiva.</li>
+            <li><i class="fa-solid fa-circle-check" style="color: var(--gold-accent); margin-right: 8px;"></i> <strong>03. Pilares da Experiência:</strong> O Rancho, A Praia Fluvial, A Pesca Esportiva.</li>
+            <li><i class="fa-solid fa-circle-check" style="color: var(--gold-accent); margin-right: 8px;"></i> <strong>04. Estrutura & Acomodações:</strong> Capacidade, quartos, camas e itens de cozinha.</li>
+            <li><i class="fa-solid fa-circle-check" style="color: var(--gold-accent); margin-right: 8px;"></i> <strong>05. Galeria de Fotos / Temporada:</strong> Rio, pôr do sol, barco e momentos.</li>
+            <li><i class="fa-solid fa-circle-check" style="color: var(--gold-accent); margin-right: 8px;"></i> <strong>06. Dúvidas Frequentes (FAQ):</strong> Preços, caução, barcos, como chegar.</li>
+            <li><i class="fa-solid fa-circle-check" style="color: var(--gold-accent); margin-right: 8px;"></i> <strong>07. Localização & Rotas:</strong> Mapa de Peixe-TO, estrada e recomendações.</li>
+            <li><i class="fa-solid fa-circle-check" style="color: var(--gold-accent); margin-right: 8px;"></i> <strong>08. Footer Institucional:</strong> Contato, Instagram, CNPJ/Responsável e selos.</li>
+          </ul>
+        </div>
+
+        <div class="card-dark">
+          <div class="card-title"><i class="fa-solid fa-rocket"></i> Stack Técnica Homologada (TM FRAMEWORK)</div>
+          <div style="display: flex; flex-direction: column; gap: 14px; font-size: 13px;">
+            <div style="padding: 12px; background: rgba(255,255,255,0.03); border-radius: 8px; border: 1px solid var(--border-dark);">
+              <strong style="color: #FFF; display: block; margin-bottom: 4px;"><i class="fa-brands fa-react" style="color: #61DAFB;"></i> React 19 + Vite + TypeScript</strong>
+              <span style="color: var(--text-dim); font-size: 12px;">Arquitetura modular, ultra-rápida, sem recarregamento de página e tipagem estrita de conteúdo.</span>
+            </div>
+            <div style="padding: 12px; background: rgba(255,255,255,0.03); border-radius: 8px; border: 1px solid var(--border-dark);">
+              <strong style="color: #FFF; display: block; margin-bottom: 4px;"><i class="fa-brands fa-css3-alt" style="color: #38BDF8;"></i> Tailwind CSS com Design Tokens Oficiais</strong>
+              <span style="color: var(--text-dim); font-size: 12px;">Cores oficiais (#th-primary, #th-accent, #th-secondary) injetadas direto no Tailwind Config.</span>
+            </div>
+            <div style="padding: 12px; background: rgba(255,255,255,0.03); border-radius: 8px; border: 1px solid var(--border-dark);">
+              <strong style="color: #FFF; display: block; margin-bottom: 4px;"><i class="fa-solid fa-wand-magic-sparkles" style="color: var(--gold-accent);"></i> Lucide Icons + Framer Motion</strong>
+              <span style="color: var(--text-dim); font-size: 12px;">Micro-animações suaves de scroll, accordion no FAQ e botões interativos de alta conversão.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Navigation Controls -->
+  <footer class="deck-footer">
+    <div class="footer-left">
+      USE AS TECLAS <kbd style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; color: #FFF;">←</kbd> E <kbd style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; color: #FFF;">→</kbd> PARA NAVEGAR ENTRE OS SLIDES
+    </div>
+
+    <div class="footer-controls">
+      <button class="btn-ctrl" id="btn-prev" onclick="changeSlide(-1)"><i class="fa-solid fa-chevron-left"></i> Anterior</button>
+      <button class="btn-ctrl btn-primary" id="btn-next" onclick="changeSlide(1)">Próximo <i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </footer>
+
+  <!-- Script de Interatividade -->
+  <script>
+    let currentSlide = 0;
+    const totalSlides = 6;
+
+    function updateDeck() {
+      // Atualiza visualização dos slides
+      for (let i = 0; i < totalSlides; i++) {
+        const slide = document.getElementById(`slide-${i}`);
+        if (slide) {
+          slide.classList.toggle('active', i === currentSlide);
+        }
+      }
+
+      // Atualiza pílulas da barra superior
+      const pills = document.querySelectorAll('.nav-pill');
+      pills.forEach((pill, idx) => {
+        pill.classList.toggle('active', idx === currentSlide);
+      });
+
+      // Atualiza botões do rodapé
+      document.getElementById('btn-prev').disabled = currentSlide === 0;
+      document.getElementById('btn-prev').style.opacity = currentSlide === 0 ? '0.4' : '1';
+      
+      const nextBtn = document.getElementById('btn-next');
+      if (currentSlide === totalSlides - 1) {
+        nextBtn.innerHTML = 'Concluir Revisão <i class="fa-solid fa-check"></i>';
+      } else {
+        nextBtn.innerHTML = 'Próximo <i class="fa-solid fa-chevron-right"></i>';
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function goToSlide(index) {
+      if (index >= 0 && index < totalSlides) {
+        currentSlide = index;
+        updateDeck();
+      }
+    }
+
+    function changeSlide(direction) {
+      const target = currentSlide + direction;
+      if (target >= 0 && target < totalSlides) {
+        currentSlide = target;
+        updateDeck();
+      }
+    }
+
+    // Navegação por teclado
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'PageDown') {
+        changeSlide(1);
+      } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        changeSlide(-1);
+      }
+    });
+
+    // Troca de Tema no Laboratório Interativo (Slide 5)
+    function setLabTheme(themeClass, buttonEl) {
+      const labContainer = document.getElementById('interactive-lab-container');
+      if (labContainer) {
+        labContainer.className = `live-mockup-frame ${themeClass}`;
+      }
+      
+      const buttons = document.querySelectorAll('.lab-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      if (buttonEl) {
+        buttonEl.classList.add('active');
+      }
+    }
+
+    // Inicialização
+    updateDeck();
+  </script>
+
+</body>
+</html>

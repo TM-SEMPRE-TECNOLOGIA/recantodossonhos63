@@ -1,0 +1,135 @@
+<!-- =========================================================================
+     COMPONENTE MODULAR: ENTRADA SPLASH COM FADE OUT • RECANTO DOS SONHOS 63
+     Cole este bloco no início do seu <body> no template que você trouxer.
+     ========================================================================= -->
+
+<!-- CSS DA INTRO -->
+<style>
+  #recanto-splash {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0E1A14; /* Fundo sólido Verde Cerrado */
+    z-index: 9999999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.85s cubic-bezier(0.4, 0, 0.2, 1), 
+                visibility 0.85s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.85s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: opacity, transform;
+  }
+
+  #recanto-splash.splash-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.04);
+    pointer-events: none;
+  }
+
+  .recanto-halo {
+    position: absolute;
+    width: 460px;
+    height: 460px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.16) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .recanto-splash-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    animation: splashLogoIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
+    opacity: 0;
+    transform: scale(0.86) translateY(12px);
+  }
+
+  @keyframes splashLogoIn {
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  .recanto-splash-img {
+    max-width: 300px;
+    width: 80vw;
+    height: auto;
+    filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.65)) drop-shadow(0 0 25px rgba(212, 175, 55, 0.3));
+    display: block;
+  }
+
+  .recanto-splash-tagline {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #D4AF37;
+    font-weight: 700;
+  }
+
+  .recanto-splash-line {
+    height: 1px;
+    width: 36px;
+    background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+  }
+
+  .recanto-progress-bar {
+    position: absolute;
+    bottom: 34px;
+    width: 150px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .recanto-progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #D4AF37;
+    animation: splashProgress 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+  }
+
+  @keyframes splashProgress {
+    to { width: 100%; }
+  }
+</style>
+
+<!-- HTML DO OVERLAY -->
+<div id="recanto-splash">
+  <div class="recanto-halo"></div>
+  <div class="recanto-splash-content">
+    <img src="./logo-recanto-cropped.png" alt="Recanto dos Sonhos" class="recanto-splash-img">
+    <div class="recanto-splash-tagline">
+      <div class="recanto-splash-line"></div>
+      <span>Peixe • Tocantins | À Beira do Araguaia</span>
+      <div class="recanto-splash-line"></div>
+    </div>
+  </div>
+  <div class="recanto-progress-bar">
+    <div class="recanto-progress-fill"></div>
+  </div>
+</div>
+
+<!-- JS DISPARADOR DO FADE OUT (2.2 SEGUNDOS) -->
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      const splash = document.getElementById('recanto-splash');
+      if (splash) splash.classList.add('splash-hidden');
+    }, 2200);
+  });
+</script>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo de Entrada Splash • Fade Out • Recanto dos Sonhos 63</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* ==========================================================================
+       MÓDULO DE ENTRADA SPLASH COM FADE OUT (PLUG-AND-PLAY PARA O TEMPLATE)
+       ========================================================================== */
+    :root {
+      --splash-bg: #0E1A14;        /* Cor sólida de fundo (Verde Cerrado Nobre) */
+      --splash-gold: #D4AF37;      /* Dourado oficial da marca */
+      --splash-gold-light: #F7DCA3;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #080D11;
+      color: #FFFFFF;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* OVERLAY EM TELA CHEIA */
+    #splash-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--splash-bg);
+      z-index: 999999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.85s cubic-bezier(0.4, 0, 0.2, 1), 
+                  visibility 0.85s cubic-bezier(0.4, 0, 0.2, 1),
+                  transform 0.85s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: opacity, transform;
+    }
+
+    /* CLASSE DE SAÍDA EM FADE OUT */
+    #splash-screen.splash-fade-out {
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(1.04);       /* Micro-expansão suave para efeito cinematográfico */
+      pointer-events: none;
+    }
+
+    /* Halo de iluminação suave atrás da logo */
+    .splash-halo {
+      position: absolute;
+      width: 480px;
+      height: 480px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.16) 0%, transparent 70%);
+      pointer-events: none;
+      animation: pulseHalo 2.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes pulseHalo {
+      0% { transform: scale(0.9); opacity: 0.3; }
+      100% { transform: scale(1.15); opacity: 0.75; }
+    }
+
+    /* Container central da Logo */
+    .splash-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      opacity: 0;
+      transform: scale(0.86) translateY(14px);
+      animation: logoEntrance 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
+    }
+
+    @keyframes logoEntrance {
+      0% {
+        opacity: 0;
+        transform: scale(0.86) translateY(14px);
+        filter: blur(8px);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        filter: blur(0px);
+      }
+    }
+
+    /* Imagem da Logo Oficial */
+    .splash-logo-img {
+      max-width: 310px;
+      width: 80vw;
+      height: auto;
+      filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.65)) 
+              drop-shadow(0 0 25px rgba(212, 175, 55, 0.3));
+      display: block;
+    }
+
+    /* Feixe de Luz (Shine) que cruza a Logo */
+    .splash-shine {
+      position: absolute;
+      top: 0;
+      left: -120%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        120deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.45) 50%,
+        rgba(255, 215, 0, 0.35) 55%,
+        transparent 70%
+      );
+      transform: skewX(-25deg);
+      pointer-events: none;
+      animation: sweepShine 1.1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+    }
+
+    @keyframes sweepShine {
+      0% { left: -120%; opacity: 0; }
+      30% { opacity: 0.9; }
+      70% { opacity: 0.9; }
+      100% { left: 180%; opacity: 0; }
+    }
+
+    /* Tagline de Localização */
+    .splash-tagline {
+      margin-top: 22px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      opacity: 0;
+      animation: taglineEntrance 0.7s ease 0.45s forwards;
+    }
+
+    @keyframes taglineEntrance {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .splash-line {
+      height: 1px;
+      width: 40px;
+      background: linear-gradient(90deg, transparent, var(--splash-gold), transparent);
+    }
+
+    .splash-tagline-text {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--splash-gold);
+      font-weight: 700;
+      white-space: nowrap;
+      text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+    }
+
+    /* Barra de Progresso Fina e Elegante */
+    .splash-progress-track {
+      position: absolute;
+      bottom: 36px;
+      width: 160px;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .splash-progress-fill {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--splash-gold), var(--splash-gold-light));
+      animation: progressFill 1.5s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+      box-shadow: 0 0 8px var(--splash-gold);
+    }
+
+    @keyframes progressFill {
+      to { width: 100%; }
+    }
+
+    /* ==========================================================================
+       ESPAÇO RESERVADO PARA A PÁGINA TEMPLATE (QUE VOCÊ VAI TRAZER)
+       ========================================================================== */
+    #template-placeholder {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      text-align: center;
+      background: radial-gradient(circle at 50% 30%, #15271E 0%, #080D11 80%);
+    }
+
+    .template-card {
+      background: rgba(18, 30, 24, 0.85);
+      border: 2px dashed rgba(212, 175, 55, 0.4);
+      border-radius: 18px;
+      padding: 48px 36px;
+      max-width: 760px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    }
+
+    .template-card i {
+      font-size: 52px;
+      color: var(--splash-gold);
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .template-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      color: #FFF;
+      margin-bottom: 12px;
+    }
+
+    .template-card p {
+      font-size: 14px;
+      color: #94A3B8;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .template-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      color: var(--splash-gold);
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* BOTÃO FLUTUANTE PARA TESTAR REPLAY DO FADE OUT */
+    .btn-replay-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 1000;
+      background: linear-gradient(135deg, var(--splash-gold), #BF9B27);
+      color: #0A1118;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 15px rgba(212, 175, 55, 0.4);
+      transition: all 0.2s ease;
+    }
+
+    .btn-replay-float:hover {
+      transform: scale(1.06);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. SPLASH SCREEN (MÓDULO DE ENTRADA • FADE OUT)
+       ========================================================================== -->
+  <div id="splash-screen">
+    <div class="splash-halo"></div>
+
+    <div class="splash-content">
+      <!-- Imagem da Logo Oficial Transparente -->
+      <img src="./logo-recanto-cropped.png" alt="Recanto dos Sonhos Peixe-TO" class="splash-logo-img">
+      <div class="splash-shine"></div>
+
+      <!-- Tagline -->
+      <div class="splash-tagline">
+        <div class="splash-line"></div>
+        <span class="splash-tagline-text">Peixe • Tocantins | À Beira do Araguaia</span>
+        <div class="splash-line"></div>
+      </div>
+    </div>
+
+    <!-- Barra de Progresso Fina -->
+    <div class="splash-progress-track">
+      <div class="splash-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       2. ESPAÇO RESERVADO PARA RECEBER A HOME E DEMAIS SEÇÕES DO SEU TEMPLATE
+       ========================================================================== -->
+  <main id="template-placeholder">
+    <div class="template-card">
+      <i class="fa-solid fa-layer-group"></i>
+      <h2>Fade Out Concluído com Sucesso!</h2>
+      <p>
+        A animação da logo encerrou suavemente com transição cinematográfica em <strong>fade out</strong>.  
+        Este espaço abaixo é onde entraremos com a <strong>Home e todos os blocos do template</strong> que você vai trazer!
+      </p>
+      <div class="template-badge">
+        <i class="fa-solid fa-code"></i> PRONTO PARA INJEÇÃO NO SEU TEMPLATE
+      </div>
+    </div>
+  </main>
+
+  <!-- Botão de Replay -->
+  <button class="btn-replay-float" onclick="triggerSplash()">
+    <i class="fa-solid fa-rotate-right"></i> Testar Entrada Fade Out
+  </button>
+
+  <!-- ==========================================================================
+       3. JAVASCRIPT DE DISPARO DO FADE OUT
+       ========================================================================== -->
+  <script>
+    const DURATION_MS = 2200; // Tempo total em exibição antes de iniciar o fade out
+
+    function triggerSplash() {
+      const splash = document.getElementById('splash-screen');
+      if (!splash) return;
+
+      // Reseta estado para replay
+      splash.classList.remove('splash-fade-out');
+
+      // Dispara o fade out após a duração
+      setTimeout(() => {
+        splash.classList.add('splash-fade-out');
+      }, DURATION_MS);
+    }
+
+    // Executa automaticamente ao carregar a página
+    window.addEventListener('DOMContentLoaded', () => {
+      triggerSplash();
+    });
+  </script>
+
+</body>
+</html>
